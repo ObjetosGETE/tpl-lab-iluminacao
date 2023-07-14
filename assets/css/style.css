@@ -3,8 +3,8 @@ BOTÃO LUMINOSO
 ************************************************/
 
 .btn-modal {
-    top: 295px;
-    left: 383px;
+    top: 787px;
+    left: 256px;
 }
 
 a {
@@ -109,9 +109,36 @@ a:hover span:nth-child(4) {
 /*************************** botões on e off *************************/
 /*********************************************************************/
 
-#controleLuz {
-    top: 750px;
-    left: 243px;
+.menu-container {
+    position: fixed;
+    bottom: 0;
+    left: 235px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.menu-header {
+    border-radius: 15px;
+}
+
+.menu-toggle {
+    display: block;
+    height: auto;
+}
+
+.menu-body {
+    margin: 15px;
+
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.menu-body.open {
+    height: auto;
 }
 
 .legenda {
@@ -212,5 +239,5 @@ a:hover span:nth-child(4) {
         z-index: 9999999999999999999;
     }
 
-    
+
 }

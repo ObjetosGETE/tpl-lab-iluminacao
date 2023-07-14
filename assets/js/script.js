@@ -96,5 +96,12 @@ function alteracaoConformeId() {
         $('.toggle').prop('checked', false);
     }
 }
+$(document).ready(function() {
+    $('.menu-toggle').click(function() {
+      $(this).toggleClass('open');
+      $('.menu-body').toggleClass('open');
+    });
+  });
+  
 
 alteracaoConformeId();
