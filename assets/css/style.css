@@ -1,13 +1,22 @@
 .square-div {
-    width: 832px;
+    width: 772px;
     height: 559px;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 218px;
+    background-color: #333;
+    font-size: 33px;
+    padding: 30px;
+    margin-top: 40px;
 }
 
+#comecar {
+    width: 696px;
+    background-color: black !important;
+    height: 72px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 56px;
+}
 
 /************************************************
 BOTÃO LUMINOSO

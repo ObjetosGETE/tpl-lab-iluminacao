@@ -46,6 +46,12 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    $('#comecar').click(function () {
+        $('#inicial').addClass('d-none');
+        $('#conteudo').removeClass('d-none');
+    });
+});
 
 function alteracaoConformeId() {
     $('.toggle').change(function () {
@@ -102,6 +108,5 @@ $(document).ready(function () {
         $('.menu-body').toggleClass('open');
     });
 });
-
 
 alteracaoConformeId();
