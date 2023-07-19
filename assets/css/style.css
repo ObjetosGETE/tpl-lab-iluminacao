@@ -1,3 +1,14 @@
+.square-div {
+    width: 832px;
+    height: 559px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /************************************************
 BOTÃO LUMINOSO
 ************************************************/
@@ -65,74 +76,6 @@ a span {
     display: block;
 }
 
-/************************************************
-TOP NEON
-************************************************/
-a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #FFC868);
-}
-
-a:hover span:nth-child(1) {
-    left: 100%;
-    transition: 600ms;
-}
-
-/************************************************
-NEON INFERIOR
-************************************************/
-a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #FFC868);
-}
-
-a:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 250ms;
-}
-
-/************************************************
-NEON DIREITO
-************************************************/
-a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #FFC868);
-}
-
-a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 100ms;
-}
-
-/************************************************
-NEON ESQUERDO
-************************************************/
-a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #FFC868);
-}
-
-a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 450ms;
-}
-
-
 /*********************************************************************/
 /*************************** botões on e off *************************/
 /*********************************************************************/
@@ -151,7 +94,7 @@ a:hover span:nth-child(4) {
     display: block;
     height: auto;
     background-color: #333;
-    border: 2px solid #333333;
+    border: none;
     color: #B9ACAC;
     border-radius: 5px;
     text-align: left;
@@ -248,28 +191,28 @@ a:hover span:nth-child(4) {
     box-shadow: 3px 5px 15px black;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #333 !important;
     border: none;
 }
 
-.btn-ambiente{
+.btn-ambiente {
     font-size: 35px;
     color: #B9ACAC;
     text-align: left;
 }
 
-.btn-ambiente:hover{
-   transform: scale(1.1);
+.btn-ambiente:hover {
+    transform: scale(1.1);
 }
 
-.title-todas{
+.title-todas {
     font-size: 25px;
 }
 
 .fundo-btn-modal {
-	background-color: #404040;
-	padding: 20px;
+    background-color: #404040;
+    padding: 20px;
 }
 
 .modal-footer {
@@ -280,7 +223,7 @@ a:hover span:nth-child(4) {
 /***************************** Estilo resize *************************/
 /*********************************************************************/
 
-.conteudo {
+.body-laboratorio {
     width: 1920px;
     height: 1080px;
     position: fixed;

@@ -20,11 +20,11 @@ function escalaProporcao(largura, altura) {
     return [proporcao, larguraAltura, larguraAlturaAuto];
 }
 
-function resizeBodyConteudo() {
+function resizeBodyBodyLaboratorio() {
 
     var proporcao1920 = escalaProporcao(1920, 1080)[0];
 
-    $(".conteudo").css({
+    $(".body-laboratorio").css({
         "transform": "scale(" + proporcao1920 + ")",
         "transform-origin": "center center"
     });
@@ -39,9 +39,9 @@ function resizeBodyConteudo() {
 }
 
 $(document).ready(function () {
-    resizeBodyConteudo()
+    resizeBodyBodyLaboratorio()
     $(window).resize(function () {
-        resizeBodyConteudo()
+        resizeBodyBodyLaboratorio()
     })
 
 });

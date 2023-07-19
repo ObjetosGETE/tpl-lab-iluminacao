@@ -13,27 +13,178 @@
 </head>
 
 <body>
-     <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="body-laboratorio">
+        <div class="inicial">
+            <div class="position-relative">
+                <img class="bg" src="assets/img/bg3.jpg" alt="">
+            </div>
+            <div class="square-div position-absolute">
+                <p class="p-inicial">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual, você
+                    terá a oportunidade de experimentar os efeitos de diversas lâmpadas e explorar diferentes
+                    composições para criar um ambiente acolhedor e inspirador.
+                </p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#modalInstrucoes">Vamos começar?</button>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="position-relative">
+                <img class="bg" src="assets/img/bg3.jpg" alt="">
+            </div>
+            <div class="menu-container position-absolute w-75 row d-flex justify-content-center">
+                <div class="row m-3">
+                    <button type="button" class="btn btn-dark col-1" data-bs-toggle="modal"
+                        data-bs-target="#modalAmbiente"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                            viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #B9ACAC
+                                }
+                            </style>
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </button>
+                    <div class="col-5 btn-modal">
+                        <a id="title-ambiente" href="#" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
+                            Luzes apagadas
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-dark col-1 "><svg xmlns="http://www.w3.org/2000/svg"
+                            height="2em" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #B9ACAC
+                                }
+                            </style>
+                            <path
+                                d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="menu-header">
+                    <button class="menu-toggle w-100">
+                        Painel de controle
+                    </button>
+                </div>
+                <div class="menu-body">
+                    <div class="row">
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff1">
+                                <label for="onoff1"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff2">
+                                <label for="onoff2"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff3">
+                                <label for="onoff3"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff4">
+                                <label for="onoff4"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff5">
+                                <label for="onoff5"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff6">
+                                <label for="onoff6"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff7">
+                                <label for="onoff7"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff8">
+                                <label for="onoff8"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff9">
+                                <label for="onoff9"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff10">
+                                <label for="onoff10"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff11">
+                                <label for="onoff11"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                        <div class="onoff row col">
+                            <div class="col position-relative text-center">
+                                <input type="checkbox" class="toggle luz" id="onoff12">
+                                <label for="onoff12"></label>
+                                <h1 class="legenda">teste</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modalAmbiente" tabindex="-1" aria-labelledby="modalAmbienteLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title" id="exampleModalLabel">Escolha um ambiente...</h1>
+                    <h1 class="modal-title" id="modalAmbienteLabel">Escolha um ambiente...</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4">
                             <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-cinema.png" alt="Image Button">Cinema</button>
+                                    src="assets/img/btn-cinema.png" alt="Imagem claquete">Cinema</button>
                             <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-leitura.png" alt="Image Button">Leitura</button>
+                                    src="assets/img/btn-leitura.png" alt="Imagem livro">Leitura</button>
                         </div>
                         <div class="col-md-4">
                             <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-descanso.png" alt="Image Button">Descanso</button>
+                                    src="assets/img/btn-descanso.png" alt="Imagem gato dormindo">Descanso</button>
                             <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-trabalho.png" alt="Image Button">Trabalho</button>
+                                    src="assets/img/btn-trabalho.png"
+                                    alt="Imagem homem trabalhando com notebook">Trabalho</button>
                         </div>
                         <div class="col-md-4">
                             <div class="onoff m-3 fundo-btn-modal rounded-3 ">
@@ -50,154 +201,44 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-dark w-auto">Instruções</button>
+                    <button type="button" class="btn btn-dark w-auto" data-bs-toggle="modal"
+                        data-bs-target="#modalInstrucoes">Instruções</button>
                     <button type="button" class="btn btn-dark w-auto" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="conteudo">
-       
-        <div class="position-relative">
-            <img class="bg" src="assets/img/bg3.jpg" alt="">
-        </div>
-        <div class="menu-container position-absolute w-75 row d-flex justify-content-center">
-            <button type="button" class="btn btn-dark col-1" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
-                    xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
-                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <style>
-                        svg {
-                            fill: #ffffff
-                        }
-                    </style>
-                    <path
-                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                </svg></button>
-            <div class="col-8 btn-modal">
-                <a id="title-ambiente" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Luzes apagadas
-                </a>
-            </div>
-            <button type="button" class="btn btn-dark col-1 "><svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                    viewBox="0 0 448 512">
-                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <style>
-                        svg {
-                            fill: #ffffff
-                        }
-                    </style>
-                    <path
-                        d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />
-                </svg></button>
-            <div class="menu-header">
-                <button class="menu-toggle w-100">
-                    <h1>Painel de controle</h1>
-                </button>
-            </div>
-            <div class="menu-body">
-                <div class="row">
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff1">
-                            <label for="onoff1"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff2">
-                            <label for="onoff2"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff3">
-                            <label for="onoff3"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff4">
-                            <label for="onoff4"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff5">
-                            <label for="onoff5"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff6">
-                            <label for="onoff6"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
 
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff7">
-                            <label for="onoff7"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff8">
-                            <label for="onoff8"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff9">
-                            <label for="onoff9"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff10">
-                            <label for="onoff10"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff11">
-                            <label for="onoff11"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
-                    <div class="onoff row col">
-                        <div class="col position-relative text-center">
-                            <input type="checkbox" class="toggle luz" id="onoff12">
-                            <label for="onoff12"></label>
-                            <h1 class="legenda">teste</h1>
-                        </div>
-                    </div>
+    <div class="modal fade" id="modalInstrucoes" tabindex="-1" aria-labelledby="modalInstrucoesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalInstrucoesLabel">Instruções</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Imagine-se projetando um espaço para um casal de artistas: um pianista da orquestra da cidade e
+                        uma pintora com sua própria galeria de arte. <br> <br> Por meio do painel de controle, você
+                        poderá navegar e descobrir os efeitos de vários tipos de lâmpadas, estratégias de uso e como a
+                        luz pode influenciar o estado de espírito, a criatividade e a experiência artística. Aproveite
+                        esta jornada iluminada!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">começar a explorar</button>
                 </div>
             </div>
         </div>
-
     </div>
+
 
     <!-- força o usuário a virar a tela do celular -->
 
     <div class="modo-smart">
         <div class="text-center">
             <p class="p-paisagem text-center">
-                <img src="assets/Img/vire.gif" class="img-fluid img-paisagem d-inline-block"><br>
+                <img src="assets/Img/vire.gif" class="img-fluid img-paisagem d-inline-block"
+                    alt="gif: celular vira para o modo paisagem"><br>
                 <strong>Por favor, gire o aparelho para o modo paisagem.</strong>
             </p>
         </div>
