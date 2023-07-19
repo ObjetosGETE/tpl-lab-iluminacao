@@ -15,7 +15,7 @@ BOTÃO LUMINOSO
 }
 
 .btn-dark:visited {
-    color: white;
+    color: #B9ACAC;
 }
 
 .btn-dark:hover {
@@ -49,7 +49,7 @@ a {
     transition: 0.2s;
     width: 100%;
     height: 100%;
-    color: white;
+    color: #B9ACAC;
 }
 
 a:hover {
@@ -152,7 +152,7 @@ a:hover span:nth-child(4) {
     height: auto;
     background-color: #333;
     border: 2px solid #333333;
-    color: white;
+    color: #B9ACAC;
     border-radius: 5px;
     text-align: left;
     padding: 15px;
@@ -177,7 +177,7 @@ a:hover span:nth-child(4) {
 
 .legenda {
     font-size: 24px;
-    color: #8B8787;
+    color: #B9ACAC;
 }
 
 .onoff input.toggle {
@@ -225,6 +225,56 @@ a:hover span:nth-child(4) {
     box-shadow: 1px 3px 10px black;
 }
 
+/*********************************************************************/
+/***************************** Estilo modal **************************/
+/*********************************************************************/
+
+.modal-header {
+    border-bottom: none;
+    box-shadow: 3px 5px 15px black;
+}
+
+.modal-title {
+    font-size: 35px;
+}
+
+.modal-content {
+    background-color: #333;
+    color: #B9ACAC;
+}
+
+.modal-body {
+    border-bottom: none;
+    box-shadow: 3px 5px 15px black;
+}
+
+.btn-secondary{
+    background-color: #333 !important;
+    border: none;
+}
+
+.btn-ambiente{
+    font-size: 35px;
+    color: #B9ACAC;
+    text-align: left;
+}
+
+.btn-ambiente:hover{
+   transform: scale(1.1);
+}
+
+.title-todas{
+    font-size: 25px;
+}
+
+.fundo-btn-modal {
+	background-color: #404040;
+	padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+}
 
 /*********************************************************************/
 /***************************** Estilo resize *************************/
@@ -238,6 +288,7 @@ a:hover span:nth-child(4) {
     top: calc(50% - 1080px / 2);
     margin: auto;
     font-family: 'Century Gothic', sans-serif;
+    color: #B9ACAC;
 }
 
 /**********************************************************************/
