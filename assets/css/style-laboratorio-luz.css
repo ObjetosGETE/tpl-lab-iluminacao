@@ -1,4 +1,19 @@
-.square-div {
+.title-inicial {
+    top: 50px;
+    color: #E74D3C;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.principal {
+    font-size: 74px;
+}
+
+.secundario {
+    font-size: 30px;
+}
+
+.div-comecar {
     width: 772px;
     height: 559px;
     border-radius: 10px;
@@ -7,15 +22,18 @@
     font-size: 33px;
     padding: 30px;
     margin-top: 40px;
+    border: 15px solid #5F5F5F;
 }
 
 #comecar {
     width: 696px;
-    background-color: black !important;
-    height: 72px;
+    background-color: #B9ACAC !important;
+    height: 105px;
     font-size: 30px;
-    padding: 10px;
+    padding: 29px;
     margin-top: 56px;
+    color: #333;
+    text-transform: uppercase;
 }
 
 /************************************************
@@ -181,21 +199,21 @@ a span {
 /***************************** Estilo modal **************************/
 /*********************************************************************/
 
-.modal-header {
+.header-ambiente {
     border-bottom: none;
     box-shadow: 3px 5px 15px black;
 }
 
-.modal-title {
+.title-ambiente {
     font-size: 35px;
 }
 
-.modal-content {
+.content-ambiente {
     background-color: #333;
     color: #B9ACAC;
 }
 
-.modal-body {
+.body-ambiente {
     border-bottom: none;
     box-shadow: 3px 5px 15px black;
 }
@@ -226,6 +244,40 @@ a span {
 
 .modal-footer {
     border-top: none;
+}
+
+/*********************************************************************/
+/********************** Estilo modal introdução **********************/
+/*********************************************************************/
+
+.header-introducao {
+    color: #E74D3C;
+    background: white;
+}
+
+#modalInstrucoesLabel {
+    font-size: 35px;
+}
+
+.contente-introducao {
+    background-color: #F2F2F2;
+}
+
+.body-introducao {
+    font-size: 33px;
+    padding: 60px;
+    color: #707070;
+}
+
+.btn-explorar {
+    width: 696px;
+    background-color: #B9ACAC !important;
+    height: 105px;
+    font-size: 30px;
+    padding: 29px;
+    margin-top: 56px;
+    color: #333;
+    text-transform: uppercase;
 }
 
 /*********************************************************************/

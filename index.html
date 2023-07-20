@@ -9,7 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-laboratorio-luz.css">
     <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 </head>
 
@@ -19,7 +19,11 @@
             <div class="position-relative">
                 <img src="assets/img/bg-capa.png" alt="backgroud">
             </div>
-            <div class="square-div position-absolute">
+            <div class="position-absolute d-flex title-inicial">
+                <h1 class="principal"><span class="secundario">Simulador:</span><br>
+                <strong>Laboratório da luz</strong> </h1>
+            </div>
+            <div class="div-comecar position-absolute">
                 <p class="p-inicial d-flex">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual, você
                     terá a oportunidade de experimentar os efeitos de diversas lâmpadas e explorar diferentes
                     composições para criar um ambiente acolhedor e inspirador.
@@ -192,21 +196,21 @@
 
     <div class="modal fade" id="modalInstrucoes" tabindex="-1" aria-labelledby="modalInstrucoesLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalInstrucoesLabel">Instruções</h5>
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content content-introducao">
+                <div class="modal-header header-introducao">
+                    <h5 class="modal-title title-introducao" id="modalInstrucoesLabel">Instruções</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body body-introducao">
                     <p>Imagine-se projetando um espaço para um casal de artistas: um pianista da orquestra da cidade e
                         uma pintora com sua própria galeria de arte. <br> <br> Por meio do painel de controle, você
                         poderá navegar e descobrir os efeitos de vários tipos de lâmpadas, estratégias de uso e como a
                         luz pode influenciar o estado de espírito, a criatividade e a experiência artística. Aproveite
                         esta jornada iluminada!</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">começar a explorar</button>
+                <div class="modal-footer d-flex justify-content-lg-center">
+                    <button type="button" class="btn btn-secondary btn-explorar" data-bs-dismiss="modal">começar a explorar</button>
                 </div>
             </div>
         </div>
@@ -261,7 +265,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-laboratorio-luz.js"></script>
 
 </body>
 
