@@ -10,7 +10,7 @@
 }
 
 .secundario {
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .div-comecar {
@@ -36,27 +36,27 @@
     text-transform: uppercase;
 }
 
-/************************************************
-BOTÃO LUMINOSO
-************************************************/
+/*********************************************************************/
+/*************************** efeito luminoso *************************/
+/*********************************************************************/
 
-.btn-dark {
+.efeito-luminoso {
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
-    text-decoration: none;
     font-size: 30px;
     overflow: hidden;
     transition: 0.2s;
     background-color: #262b30;
     border: 3px solid #E74D3C;
+    width: 100%;
+    height: 100%;
 }
 
-.btn-dark:visited {
+.efeito-luminoso:visited {
     color: #B9ACAC;
 }
 
-.btn-dark:hover {
+.efeito-luminoso:hover {
     color: #050f1a;
     background: #FFC868;
     box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
@@ -64,47 +64,29 @@ BOTÃO LUMINOSO
     border: 3px solid #FFC868;
 }
 
-.btn-dark span {
-    position: absolute;
-    display: block;
+/*********************************************************************/
+/**************************** btn controle ***************************/
+/*********************************************************************/
+
+.btn-principais {
+    width: 118px;
 }
 
 .btn-modal {
     background-color: #262b30;
-    border: 3px solid #E74D3C;
     border-radius: 11px;
     width: 1126px;
     margin-inline: 37px;
 }
 
-a {
-    position: relative;
-    display: inline-block;
+#title-ambiente {
     padding: 20px 20px;
     text-decoration: none;
     font-size: 45px;
-    overflow: hidden;
-    transition: 0.2s;
-    width: 100%;
-    height: 100%;
-    color: #B9ACAC;
-}
-
-a:hover {
-    color: #050f1a;
-    background: #FFC868;
-    border-radius: 3px;
-    box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
-    transition-delay: 600ms;
-}
-
-a span {
-    position: absolute;
-    display: block;
 }
 
 /*********************************************************************/
-/*************************** botões on e off *************************/
+/****************************** btn on e off *************************/
 /*********************************************************************/
 
 .menu-container {
@@ -252,14 +234,16 @@ a span {
 
 .header-introducao {
     color: #E74D3C;
-    background: white;
+    background: white !important;
+    padding-inline: 60px;
 }
 
 #modalInstrucoesLabel {
     font-size: 35px;
+    font-weight: bold;
 }
 
-.contente-introducao {
+.content-introducao {
     background-color: #F2F2F2;
 }
 
@@ -291,7 +275,6 @@ a span {
     left: calc(50% - 1920px / 2);
     top: calc(50% - 1080px / 2);
     margin: auto;
-    font-family: 'Century Gothic', sans-serif;
     color: #B9ACAC;
 }
 
