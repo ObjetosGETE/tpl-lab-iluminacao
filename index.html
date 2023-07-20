@@ -21,32 +21,55 @@
             </div>
             <div class="position-absolute d-flex title-inicial">
                 <h1 class="principal"><span class="secundario">Simulador:</span><br>
-                <strong>Laboratório da luz</strong> </h1>
+                    <strong>Laboratório da luz</strong> </h1>
             </div>
             <div class="div-comecar position-absolute">
-                <p class="p-inicial d-flex">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual, você
+                <p class="p-inicial d-flex">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual,
+                    você
                     terá a oportunidade de experimentar os efeitos de diversas lâmpadas e explorar diferentes
                     composições para criar um ambiente acolhedor e inspirador.
                 </p>
-                <button type="button" class="btn btn-secondary d-flex justify-content-lg-center" id="comecar">Vamos começar?</button>
+                <button type="button" class="btn btn-secondary d-flex justify-content-lg-center" id="comecar">Vamos
+                    começar?</button>
             </div>
         </div>
+
+
         <div id="conteudo" class="d-none">
             <div class="position-relative">
-                <img class="bg" src="assets/img/bg3.jpg" alt="backgroud">
+                <img class="bg" src="assets/img/01-Luzes-apagadas.png" alt="luzes apagadas">
             </div>
             <div class="menu-container position-absolute w-75 row d-flex justify-content-center">
                 <div class="row m-3">
-                    <button type="button" class="btn btn-principais efeito-luminoso col-1" data-bs-toggle="modal" data-bs-target="#modalAmbiente"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style> svg { fill: #B9ACAC } </style>
-                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /> </svg>
+                    <button type="button" class="btn btn-principais efeito-luminoso col-1" data-bs-toggle="modal"
+                        data-bs-target="#modalAmbiente"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                            viewBox="0 0 448 512">
+                            <style>
+                                svg {
+                                    fill: #B9ACAC
+                                }
+                            </style>
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
                     </button>
                     <div class="col-5 btn-modal">
-                        <a id="title-ambiente" class="efeito-luminoso" href="#" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
+                        <a id="title-ambiente" class="efeito-luminoso" href="#" data-bs-toggle="modal"
+                            data-bs-target="#modalAmbiente">
                             Luzes apagadas
                         </a>
                     </div>
-                    <button type="button" class="btn btn-principais efeito-luminoso col-1" onclick="openFullscreen();"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style>svg { fill: #B9ACAC } </style>
-                            <path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" /></svg>
+                    <button type="button" class="btn btn-principais efeito-luminoso col-1"
+                        onclick="openFullscreen();"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                            viewBox="0 0 448 512">
+                            <style>
+                                svg {
+                                    fill: #B9ACAC
+                                }
+                            </style>
+                            <path
+                                d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />
+                        </svg>
                     </button>
                 </div>
                 <div class="menu-header">
@@ -84,6 +107,7 @@
                                 <h1 class="legenda">teste</h1>
                             </div>
                         </div>
+
                         <div class="onoff row col">
                             <div class="col position-relative text-center">
                                 <input type="checkbox" class="toggle luz" id="onoff5">
@@ -98,7 +122,6 @@
                                 <h1 class="legenda">teste</h1>
                             </div>
                         </div>
-
                         <div class="onoff row col">
                             <div class="col position-relative text-center">
                                 <input type="checkbox" class="toggle luz" id="onoff7">
@@ -113,6 +136,7 @@
                                 <h1 class="legenda">teste</h1>
                             </div>
                         </div>
+
                         <div class="onoff row col">
                             <div class="col position-relative text-center">
                                 <input type="checkbox" class="toggle luz" id="onoff9">
@@ -124,21 +148,6 @@
                             <div class="col position-relative text-center">
                                 <input type="checkbox" class="toggle luz" id="onoff10">
                                 <label for="onoff10"></label>
-                                <h1 class="legenda">teste</h1>
-                            </div>
-                        </div>
-
-                        <div class="onoff row col">
-                            <div class="col position-relative text-center">
-                                <input type="checkbox" class="toggle luz" id="onoff11">
-                                <label for="onoff11"></label>
-                                <h1 class="legenda">teste</h1>
-                            </div>
-                        </div>
-                        <div class="onoff row col">
-                            <div class="col position-relative text-center">
-                                <input type="checkbox" class="toggle luz" id="onoff12">
-                                <label for="onoff12"></label>
                                 <h1 class="legenda">teste</h1>
                             </div>
                         </div>
@@ -159,28 +168,37 @@
                 <div class="modal-body body-ambiente">
                     <div class="row">
                         <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-cinema.png" alt="Imagem claquete">Cinema</button>
-                            <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-leitura.png" alt="Imagem livro">Leitura</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-descanso.png" alt="Imagem gato dormindo">Descanso</button>
-                            <button class="btn btn-secondary btn-ambiente m-1"><img class="img-fluid rounded-3"
-                                    src="assets/img/btn-trabalho.png"
+                            <button class="btn btn-secondary btn-ambiente m-1" type="checkbox" class="toggle luz"
+                                id="onoff11"><img class="img-fluid rounded-3" src="assets/img/btn-trabalho.png"
                                     alt="Imagem homem trabalhando com notebook">Trabalho</button>
+                            <button class="btn btn-secondary btn-ambiente m-1" type="checkbox" class="toggle luz"
+                                id="onoff12"><img class="img-fluid rounded-3" src="assets/img/btn-leitura.png"
+                                    alt="Imagem livro">Leitura</button>
+
                         </div>
                         <div class="col-md-4">
-                            <div class="onoff m-3 fundo-btn-modal rounded-3 ">
+                            <button class="btn btn-secondary btn-ambiente m-1" type="checkbox" class="toggle luz"
+                                id="onoff13"><img class="img-fluid rounded-3" src="assets/img/btn-cinema.png"
+                                    alt="Imagem claquete">Cinema</button>
+                            <button class="btn btn-secondary btn-ambiente m-1" type="checkbox" class="toggle"
+                                id="onoff14"><img class="img-fluid rounded-3" src="assets/img/btn-descanso.png"
+                                    alt="Imagem gato dormindo">Descanso</button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="onoff-modal m-3 fundo-btn-modal rounded-3">
                                 <h3 class="title-todas">Acender todas as luzes</h3>
-                                <input type="checkbox" class="toggle luz" id="onoff13">
-                                <label for="onoff13"></label>
+                                <div class="ajuste">
+                                    <input type="checkbox" class="toggle luz" id="onoff15">
+                                    <label for="onoff15"></label>
+                                </div>
                             </div>
-                            <div class="onoff m-3 fundo-btn-modal rounded-3">
+                            <div class="onoff-modal m-3 fundo-btn-modal rounded-3">
                                 <h3 class="title-todas">Apagar todas as luzes</h3>
-                                <input type="checkbox" class="toggle luz" id="onoff14">
-                                <label for="onoff14"></label>
+                                <div class="ajuste">
+                                    <input type="checkbox" class="toggle luz" id="onoff16">
+                                    <label for="onoff16"></label>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -210,7 +228,8 @@
                         esta jornada iluminada!</p>
                 </div>
                 <div class="modal-footer d-flex justify-content-lg-center">
-                    <button type="button" class="btn btn-secondary btn-explorar" data-bs-dismiss="modal">começar a explorar</button>
+                    <button type="button" class="btn btn-secondary btn-explorar" data-bs-dismiss="modal">começar a
+                        explorar</button>
                 </div>
             </div>
         </div>

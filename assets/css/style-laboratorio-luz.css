@@ -1,46 +1,33 @@
 :root {
-    --color-title-inicial: #E74D3C;
-    --color-background-div: #333;
-    --color-border-div: #5F5F5F;
-    --color-button-comecar: #B9ACAC;
-    --color-text: #333;
-    --efeito-luminoso-background-color: #262b30;
-    --efeito-luminoso-border-color: #E74D3C;
-    --efeito-luminoso-visited-color: #B9ACAC;
-    --efeito-luminoso-hover-color: #050f1a;
+    --cor-principal-font: #B9ACAC;
+    --cor-secundaria-font: black;
+    --cor-terciaria-font: #E74D3C;
+
+    --cor-principal-bg: #333;
+    --cor-secundaria-bg: #B9ACAC;
+    --cor-terciaria-bg: white;
+
+    --cor-primaria-borda: #404040;
+    --cor-secundaria-borda: #E74D3C;
+
     --efeito-luminoso-hover-background: #FFC868;
     --efeito-luminoso-hover-box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
-    --efeito-luminoso-hover-transition-delay: 600ms;
     --efeito-luminoso-hover-border-color: #FFC868;
-    --btn-modal-background-color: #262b30;
-    --menu-container-bg-color: #333;
-    --menu-container-text-color: #B9ACAC;
-    --menu-body-bg-color: #333;
-    --menu-body-border-color: #333333;
-    --legenda-text-color: #B9ACAC;
-    --toggle-bg-color: #707070;
+
+    --sombra: 3px 5px 15px black;
+    --sombra-texto: 2px 2px 4px black;
+
     --toggle-button-bg-color: #fff;
     --toggle-button-bg-color-checked: #F5866C;
-    --header-ambiente-box-shadow: 3px 5px 15px black;
-    --content-ambiente-bg-color: #333;
-    --content-ambiente-text-color: #B9ACAC;
-    --body-ambiente-box-shadow: 3px 5px 15px black;
-    --btn-secondary-bg-color: #333 !important;
-    --btn-ambiente-text-color: #B9ACAC;
-    --title-todas-text-color: #B9ACAC;
-    --fundo-btn-modal-bg-color: #404040;
-    --modal-footer-border-top: none;
-    --header-introducao-color: #E74D3C;
-    --header-introducao-bg-color: white;
-    --modal-instrucoes-label-font-size: 35px;
-    --content-introducao-bg-color: #F2F2F2;
-    --body-introducao-font-size: 33px;
-    --body-introducao-color: #707070;
-    --btn-explorar-bg-color: #B9ACAC !important;
-    --btn-explorar-color: #333;
-    --body-laboratorio-text-color: #B9ACAC;
+
     --p-paisagem-text-color: white;
     --modo-smart-bg-color: #F5866C;
+
+    --font-size-titulo: 45px;
+    --font-size-subtitulo: 35px;
+    --font-size-btn-principal: 35px;
+    --font-size-paragrafo: 33px;
+    --font-size-legenda: 24px;
 }
 
 /*********************************************************************/
@@ -49,9 +36,9 @@
 
 .title-inicial {
     top: 50px;
-    color: var(--color-title-inicial);
+    color: var(--cor-terciaria-font);
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: var(--sombra-texto);
 }
 
 .principal {
@@ -59,7 +46,7 @@
 }
 
 .secundario {
-    font-size: 45px;
+    font-size: var(--font-size-titulo);
 }
 
 .div-comecar {
@@ -67,21 +54,21 @@
     height: 559px;
     border-radius: 10px;
     top: 218px;
-    background-color: var(--color-background-div);
-    font-size: 33px;
+    background-color: var(--cor-principal-bg);
+    font-size: var(--font-size-paragrafo);
     padding: 30px;
     margin-top: 40px;
-    border: 15px solid var(--color-border-div);
+    border: 15px solid var(--cor-primaria-borda);
 }
 
 #comecar {
     width: 696px;
-    background-color: var(--color-button-comecar) !important;
+    background-color: var(--cor-secundaria-bg) !important;
     height: 105px;
-    font-size: 30px;
+    font-size: var(--font-size-btn-principal);
     padding: 29px;
     margin-top: 56px;
-    color: var(--color-text);
+    color: var(--cor-secundaria-font);
     text-transform: uppercase;
 }
 
@@ -93,24 +80,24 @@
 .efeito-luminoso {
     position: relative;
     display: inline-block;
-    font-size: 30px;
+    font-size: var(--font-size-btn-principal);
     overflow: hidden;
     transition: 0.2s;
-    background-color: var(--efeito-luminoso-background-color);
-    border: 3px solid var(--efeito-luminoso-border-color);
+    background-color: var(--cor-principal-bg);
+    border: 3px solid var(--cor-secundaria-borda);
     width: 100%;
     height: 100%;
 }
 
 .efeito-luminoso:visited {
-    color: var(--efeito-luminoso-visited-color);
+    color: var(--cor-principal-font);
 }
 
 .efeito-luminoso:hover {
-    color: var(--efeito-luminoso-hover-color);
+    color: var(--cor-secundaria-font);
     background: var(--efeito-luminoso-hover-background);
     box-shadow: var(--efeito-luminoso-hover-box-shadow);
-    transition-delay: var(--efeito-luminoso-hover-transition-delay);
+    transition-delay: 600ms;
     border: 3px solid var(--efeito-luminoso-hover-border-color);
 }
 
@@ -123,8 +110,8 @@
 }
 
 .btn-modal {
-    background-color: var(--btn-modal-background-color);
-    border-radius: 11px;
+    background-color: var(--cor-principal-bg);
+    border-radius: 10px;
     width: 1126px;
     margin-inline: 37px;
 }
@@ -132,13 +119,13 @@
 #title-ambiente {
     padding: 20px 20px;
     text-decoration: none;
-    font-size: 45px;
+    font-size: var(--font-size-titulo);
 }
 
 
-/*********************************************************************/
-/****************************** btn on e off *************************/
-/*********************************************************************/
+/**********************************************************************/
+/************************ painel de controle *************************/
+/********************************************************************/
 
 .menu-container {
     position: fixed;
@@ -148,19 +135,19 @@
     transition: height 0.3s ease;
     border-radius: 5px;
     margin: 15px;
-    color: var(--menu-container-text-color);
+    color: var(--cor-principal-font);
 }
 
 .menu-toggle {
     display: block;
     height: auto;
-    background-color: var(--menu-container-bg-color);
+    background-color: var(--cor-principal-bg);
     border: none;
-    color: var(--menu-container-text-color);
+    color: var(--cor-principal-font);
     border-radius: 5px;
     text-align: left;
     padding: 15px;
-    font-size: 35px;
+    font-size: var(--font-size-subtitulo);
 }
 
 .row {
@@ -171,18 +158,17 @@
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
-    background-color: var(--menu-body-bg-color);
-    border: 2px solid var(--menu-body-border-color);
+    background-color: var(--cor-principal-bg);
+    border: 2px solid var(--cor-principal-bg);
 }
 
 .menu-body.open {
     height: auto;
 }
 
-
 .legenda {
-    font-size: 24px;
-    color: var(--legenda-text-color);
+    font-size: var(--font-size-legenda);
+    color: var(--cor-principal-font);
 }
 
 .onoff input.toggle {
@@ -203,8 +189,8 @@
     height: 100px;
     border-radius: 30px;
     transition: 0.1s ease-in-out;
-    background-color: var(--toggle-bg-color);
-    box-shadow: 4px 8px 15px black;
+    background-color: var(--cor-secundaria-bg);
+    box-shadow: var(--sombra);
 }
 
 .onoff input.toggle+label:after {
@@ -217,7 +203,7 @@
     border-radius: 30px;
     background: var(--toggle-button-bg-color);
     transition: 0.1s ease-in-out;
-    box-shadow: 3px 5px 15px black;
+    box-shadow: var(--sombra);
 }
 
 .onoff input.toggle:checked+label::before {
@@ -227,40 +213,40 @@
 
 .onoff input.toggle:checked+label::after {
     top: 0px;
-    box-shadow: 1px 3px 10px black;
+    box-shadow: var(--sombra-texto);
 }
 
 /*********************************************************************/
-/************************ Estilo modal  ambiente**********************/
+/*********************** Estilo modal  ambiente **********************/
 /*********************************************************************/
 
 .header-ambiente {
     border-bottom: none;
-    box-shadow: var(--header-ambiente-box-shadow);
+    box-shadow: var(--sombra);
 }
 
 .title-ambiente {
-    font-size: 35px;
+    font-size: var(--font-size-subtitulo);
 }
 
 .content-ambiente {
-    background-color: var(--content-ambiente-bg-color);
-    color: var(--content-ambiente-text-color);
+    background-color: var(--cor-principal-bg);
+    color: var(--cor-principal-font);
 }
 
 .body-ambiente {
     border-bottom: none;
-    box-shadow: var(--body-ambiente-box-shadow);
+    box-shadow: var(--sombra);
 }
 
 .btn-secondary {
-    background-color: var(--btn-secondary-bg-color);
+    background-color: var(--cor-principal-bg);
     border: none;
 }
 
 .btn-ambiente {
-    font-size: 35px;
-    color: var(--btn-ambiente-text-color);
+    font-size: var(--font-size-btn-principal);
+    color: var(--cor-principal-font);
     text-align: left;
 }
 
@@ -269,52 +255,107 @@
 }
 
 .title-todas {
-    font-size: 25px;
-    color: var(--title-todas-text-color);
+    font-size: var(--font-size-paragrafo);
+    color: var(--cor-principal-font);
+    margin-left: 10%;
 }
 
 .fundo-btn-modal {
-    background-color: var(--fundo-btn-modal-bg-color);
-    padding: 20px;
+    background-color: var(--cor-primaria-borda);
+    padding: 10px;
 }
 
 .modal-footer {
-    border-top: var(--modal-footer-border-top);
+    border-top: none;
 }
+.ajuste{
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+.onoff-modal input.toggle {
+    display: none;
+    
+}
+
+.onoff-modal input.toggle+label {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 32px;
+    border-radius: 30px;
+}
+
+.onoff-modal input.toggle + label::before {
+	content: "";
+	display: block;
+	height: 40px;
+	border-radius: 30px;
+	transition: 0.1s ease-in-out;
+	background-color: var(--cor-secundaria-bg);
+	box-shadow: var(--sombra);
+	width: 175px;
+}
+
+.onoff-modal input.toggle+label:after {
+    content: "";
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    background: var(--toggle-button-bg-color);
+    transition: 0.1s ease-in-out;
+    box-shadow: var(--sombra);
+}
+
+.onoff-modal input.toggle:checked+label::before {
+    width: 175px;
+    background: var(--toggle-button-bg-color-checked);
+}
+
+.onoff-modal input.toggle:checked+label::after {
+    left: 135px;
+    box-shadow: var(--sombra-texto);
+}
+
+
+
 
 /*********************************************************************/
 /********************** Estilo modal introdução **********************/
 /*********************************************************************/
 
 .header-introducao {
-    color: var(--header-introducao-color);
-    background: var(--header-introducao-bg-color) !important;
+    color: var(--cor-terciaria-font);
+    background-color: var(--cor-terciaria-bg);
     padding-inline: 60px;
 }
 
 #modalInstrucoesLabel {
-    font-size: var(--modal-instrucoes-label-font-size);
+    font-size: var(--font-size-btn-principal);
     font-weight: bold;
 }
 
 .content-introducao {
-    background-color: var(--content-introducao-bg-color);
+    background-color: var(--cor-terciaria-bg);
 }
 
 .body-introducao {
-    font-size: var(--body-introducao-font-size);
+    font-size: var(--font-size-paragrafo);
     padding: 60px;
-    color: var(--body-introducao-color);
+    color: var(--cor-principal-font);
 }
 
 .btn-explorar {
     width: 696px;
-    background-color: var(--btn-explorar-bg-color);
+    background-color: var(--cor-secundaria-bg);
     height: 105px;
-    font-size: 30px;
+    font-size: var(--font-size-btn-principal);
     padding: 29px;
     margin-top: 56px;
-    color: var(--btn-explorar-color);
+    color: var(--cor-secundaria-font);
     text-transform: uppercase;
 }
 
@@ -329,14 +370,14 @@
     left: calc(50% - 1920px / 2);
     top: calc(50% - 1080px / 2);
     margin: auto;
-    color: var(--body-laboratorio-text-color);
+    color: var(--cor-principal-font);
 }
 
 /**********************************************************************/
 /***************************** vire o celular *************************/
 /**********************************************************************/
 .p-paisagem {
-    color: var(--p-paisagem-text-color);
+    color: var(--cor-terciaria-font);
     text-align: center;
 }
 

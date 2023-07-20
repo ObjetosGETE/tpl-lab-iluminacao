@@ -56,18 +56,22 @@ $(document).ready(function () {
 function alteracaoConformeId() {
     $('.toggle').change(function () {
         var backgrounds = {
-            'onoff1': 'assets/img/bg1.jpg',
-            'onoff2': 'assets/img/bg2.jpg',
-            'onoff3': 'assets/img/bg3.jpg',
-            'onoff4': 'assets/img/bg4.jpg',
-            'onoff5': 'assets/img/bg5.jpg',
-            'onoff6': 'assets/img/bg6.jpg',
-            'onoff7': 'assets/img/bg7.jpg',
-            'onoff8': 'assets/img/bg8.jpg',
-            'onoff9': 'assets/img/bg9.jpg',
-            'onoff10': 'assets/img/bg10.jpg',
-            'onoff11': 'assets/img/bg11.jpg',
-            'onoff12': 'assets/img/bg12.jpg'
+            'onoff1': 'assets/img/02-Bulbo.png',
+            'onoff2': 'assets/img/03-Didroicas.png',
+            'onoff3': 'assets/img/04-Mini-dicroicas.png',
+            'onoff4': 'assets/img/05-PAR.png',
+            'onoff5': 'assets/img/06-Arandela.png',
+            'onoff6': 'assets/img/07-AR.png',
+            'onoff7': 'assets/img/08-Balizadores.png',
+            'onoff8': 'assets/img/09-Perfil-led.png',
+            'onoff9': 'assets/img/10-Tubular.png',
+            'onoff10': 'assets/img/11-Halopin.png',
+            'onoff11': 'assets/img/12-Trabalho.png',
+            'onoff12': 'assets/img/13-Leitura.png',
+            'onoff13': 'assets/img/14-Cinema.png',
+            'onoff14': 'assets/img/15-Descanso.png',
+            'onoff15': 'assets/img/16-Todas-acesas.png',
+            'onoff16': 'assets/img/01-Luzes-apagadas.png'
         };
 
         var background = $('.bg');
@@ -88,7 +92,7 @@ function alteracaoConformeId() {
                 $('#title-ambiente').text('Luzes apagadas');
             }
         } else {
-            background.attr('src', 'assets/img/bg0.png');
+            background.attr('src', 'assets/img/01-Luzes-apagadas.png');
             uncheckAllCheckboxes();
             $('#title-ambiente').text('Luzes apagadas');
         }
