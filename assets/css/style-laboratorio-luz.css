@@ -1,6 +1,55 @@
+:root {
+    --color-title-inicial: #E74D3C;
+    --color-background-div: #333;
+    --color-border-div: #5F5F5F;
+    --color-button-comecar: #B9ACAC;
+    --color-text: #333;
+    --efeito-luminoso-background-color: #262b30;
+    --efeito-luminoso-border-color: #E74D3C;
+    --efeito-luminoso-visited-color: #B9ACAC;
+    --efeito-luminoso-hover-color: #050f1a;
+    --efeito-luminoso-hover-background: #FFC868;
+    --efeito-luminoso-hover-box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
+    --efeito-luminoso-hover-transition-delay: 600ms;
+    --efeito-luminoso-hover-border-color: #FFC868;
+    --btn-modal-background-color: #262b30;
+    --menu-container-bg-color: #333;
+    --menu-container-text-color: #B9ACAC;
+    --menu-body-bg-color: #333;
+    --menu-body-border-color: #333333;
+    --legenda-text-color: #B9ACAC;
+    --toggle-bg-color: #707070;
+    --toggle-button-bg-color: #fff;
+    --toggle-button-bg-color-checked: #F5866C;
+    --header-ambiente-box-shadow: 3px 5px 15px black;
+    --content-ambiente-bg-color: #333;
+    --content-ambiente-text-color: #B9ACAC;
+    --body-ambiente-box-shadow: 3px 5px 15px black;
+    --btn-secondary-bg-color: #333 !important;
+    --btn-ambiente-text-color: #B9ACAC;
+    --title-todas-text-color: #B9ACAC;
+    --fundo-btn-modal-bg-color: #404040;
+    --modal-footer-border-top: none;
+    --header-introducao-color: #E74D3C;
+    --header-introducao-bg-color: white;
+    --modal-instrucoes-label-font-size: 35px;
+    --content-introducao-bg-color: #F2F2F2;
+    --body-introducao-font-size: 33px;
+    --body-introducao-color: #707070;
+    --btn-explorar-bg-color: #B9ACAC !important;
+    --btn-explorar-color: #333;
+    --body-laboratorio-text-color: #B9ACAC;
+    --p-paisagem-text-color: white;
+    --modo-smart-bg-color: #F5866C;
+}
+
+/*********************************************************************/
+/**************************** tela inicial ***************************/
+/*********************************************************************/
+
 .title-inicial {
     top: 50px;
-    color: #E74D3C;
+    color: var(--color-title-inicial);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -18,23 +67,24 @@
     height: 559px;
     border-radius: 10px;
     top: 218px;
-    background-color: #333;
+    background-color: var(--color-background-div);
     font-size: 33px;
     padding: 30px;
     margin-top: 40px;
-    border: 15px solid #5F5F5F;
+    border: 15px solid var(--color-border-div);
 }
 
 #comecar {
     width: 696px;
-    background-color: #B9ACAC !important;
+    background-color: var(--color-button-comecar) !important;
     height: 105px;
     font-size: 30px;
     padding: 29px;
     margin-top: 56px;
-    color: #333;
+    color: var(--color-text);
     text-transform: uppercase;
 }
+
 
 /*********************************************************************/
 /*************************** efeito luminoso *************************/
@@ -46,22 +96,22 @@
     font-size: 30px;
     overflow: hidden;
     transition: 0.2s;
-    background-color: #262b30;
-    border: 3px solid #E74D3C;
+    background-color: var(--efeito-luminoso-background-color);
+    border: 3px solid var(--efeito-luminoso-border-color);
     width: 100%;
     height: 100%;
 }
 
 .efeito-luminoso:visited {
-    color: #B9ACAC;
+    color: var(--efeito-luminoso-visited-color);
 }
 
 .efeito-luminoso:hover {
-    color: #050f1a;
-    background: #FFC868;
-    box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
-    transition-delay: 600ms;
-    border: 3px solid #FFC868;
+    color: var(--efeito-luminoso-hover-color);
+    background: var(--efeito-luminoso-hover-background);
+    box-shadow: var(--efeito-luminoso-hover-box-shadow);
+    transition-delay: var(--efeito-luminoso-hover-transition-delay);
+    border: 3px solid var(--efeito-luminoso-hover-border-color);
 }
 
 /*********************************************************************/
@@ -73,7 +123,7 @@
 }
 
 .btn-modal {
-    background-color: #262b30;
+    background-color: var(--btn-modal-background-color);
     border-radius: 11px;
     width: 1126px;
     margin-inline: 37px;
@@ -84,6 +134,7 @@
     text-decoration: none;
     font-size: 45px;
 }
+
 
 /*********************************************************************/
 /****************************** btn on e off *************************/
@@ -97,14 +148,15 @@
     transition: height 0.3s ease;
     border-radius: 5px;
     margin: 15px;
+    color: var(--menu-container-text-color);
 }
 
 .menu-toggle {
     display: block;
     height: auto;
-    background-color: #333;
+    background-color: var(--menu-container-bg-color);
     border: none;
-    color: #B9ACAC;
+    color: var(--menu-container-text-color);
     border-radius: 5px;
     text-align: left;
     padding: 15px;
@@ -119,17 +171,18 @@
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
-    background-color: #333;
-    border: 2px solid #333333;
+    background-color: var(--menu-body-bg-color);
+    border: 2px solid var(--menu-body-border-color);
 }
 
 .menu-body.open {
     height: auto;
 }
 
+
 .legenda {
     font-size: 24px;
-    color: #B9ACAC;
+    color: var(--legenda-text-color);
 }
 
 .onoff input.toggle {
@@ -150,7 +203,7 @@
     height: 100px;
     border-radius: 30px;
     transition: 0.1s ease-in-out;
-    background-color: #707070;
+    background-color: var(--toggle-bg-color);
     box-shadow: 4px 8px 15px black;
 }
 
@@ -162,14 +215,14 @@
     top: 68px;
     left: 0px;
     border-radius: 30px;
-    background: #fff;
+    background: var(--toggle-button-bg-color);
     transition: 0.1s ease-in-out;
     box-shadow: 3px 5px 15px black;
 }
 
 .onoff input.toggle:checked+label::before {
     width: 30px;
-    background: #F5866C;
+    background: var(--toggle-button-bg-color-checked);
 }
 
 .onoff input.toggle:checked+label::after {
@@ -178,12 +231,12 @@
 }
 
 /*********************************************************************/
-/***************************** Estilo modal **************************/
+/************************ Estilo modal  ambiente**********************/
 /*********************************************************************/
 
 .header-ambiente {
     border-bottom: none;
-    box-shadow: 3px 5px 15px black;
+    box-shadow: var(--header-ambiente-box-shadow);
 }
 
 .title-ambiente {
@@ -191,23 +244,23 @@
 }
 
 .content-ambiente {
-    background-color: #333;
-    color: #B9ACAC;
+    background-color: var(--content-ambiente-bg-color);
+    color: var(--content-ambiente-text-color);
 }
 
 .body-ambiente {
     border-bottom: none;
-    box-shadow: 3px 5px 15px black;
+    box-shadow: var(--body-ambiente-box-shadow);
 }
 
 .btn-secondary {
-    background-color: #333 !important;
+    background-color: var(--btn-secondary-bg-color);
     border: none;
 }
 
 .btn-ambiente {
     font-size: 35px;
-    color: #B9ACAC;
+    color: var(--btn-ambiente-text-color);
     text-align: left;
 }
 
@@ -217,15 +270,16 @@
 
 .title-todas {
     font-size: 25px;
+    color: var(--title-todas-text-color);
 }
 
 .fundo-btn-modal {
-    background-color: #404040;
+    background-color: var(--fundo-btn-modal-bg-color);
     padding: 20px;
 }
 
 .modal-footer {
-    border-top: none;
+    border-top: var(--modal-footer-border-top);
 }
 
 /*********************************************************************/
@@ -233,34 +287,34 @@
 /*********************************************************************/
 
 .header-introducao {
-    color: #E74D3C;
-    background: white !important;
+    color: var(--header-introducao-color);
+    background: var(--header-introducao-bg-color) !important;
     padding-inline: 60px;
 }
 
 #modalInstrucoesLabel {
-    font-size: 35px;
+    font-size: var(--modal-instrucoes-label-font-size);
     font-weight: bold;
 }
 
 .content-introducao {
-    background-color: #F2F2F2;
+    background-color: var(--content-introducao-bg-color);
 }
 
 .body-introducao {
-    font-size: 33px;
+    font-size: var(--body-introducao-font-size);
     padding: 60px;
-    color: #707070;
+    color: var(--body-introducao-color);
 }
 
 .btn-explorar {
     width: 696px;
-    background-color: #B9ACAC !important;
+    background-color: var(--btn-explorar-bg-color);
     height: 105px;
     font-size: 30px;
     padding: 29px;
     margin-top: 56px;
-    color: #333;
+    color: var(--btn-explorar-color);
     text-transform: uppercase;
 }
 
@@ -275,15 +329,14 @@
     left: calc(50% - 1920px / 2);
     top: calc(50% - 1080px / 2);
     margin: auto;
-    color: #B9ACAC;
+    color: var(--body-laboratorio-text-color);
 }
 
 /**********************************************************************/
 /***************************** vire o celular *************************/
 /**********************************************************************/
-
 .p-paisagem {
-    color: white;
+    color: var(--p-paisagem-text-color);
     text-align: center;
 }
 
@@ -306,9 +359,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #7c88e7;
+        background-color: var(--modo-smart-bg-color);
         z-index: 9999999999999999999;
     }
-
-
 }
