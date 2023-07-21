@@ -61,7 +61,7 @@ $(document).ready(function () {
 });
 
 
-function alteracaoConformeId() {
+function alternarLuzIndividual() {
     $('.toggle').change(function () {
         var backgrounds = {
             'onoff1': 'assets/img/02-Bulbo.png',
@@ -105,14 +105,12 @@ function alteracaoConformeId() {
                 $('#title-ambiente').text('Iluminação tubular');
             } else if (checkedCheckboxId === 'onoff10') {
                 $('#title-ambiente').text('Iluminação halopin');
-            } else if (checkedCheckboxId === 'onoff15') {
-                $('#title-ambiente').text('Todas as luzes acesas');
             } else {
                 $('#title-ambiente').text('Todas as luzes apagadas');
             }
         } else {
             background.attr('src', 'assets/img/01-Luzes-apagadas.png');
-            $('#title-ambiente').text('Luzes apagadas');
+            $('#title-ambiente').text('Todas as luzes apagadas');
         }
     });
 
@@ -121,11 +119,70 @@ function alteracaoConformeId() {
     }
 }
 
+
+
+
+
+
+function ambienteTrabalho() {
+    $('.toggle').prop('checked', false);
+
+    $('#onoff2, #onoff4, #onoff8, #onoff9, #onoff10').prop('checked', true);
+
+    $('.bg').attr('src', 'assets/img/12-trabalho.png');
+
+    $('#title-ambiente').text('Iluminação trabalho');
+}
+
+function ambienteLeitura() {
+    $('.toggle').prop('checked', false);
+
+    $('#onoff1, #onoff5, #onoff6, #onoff8').prop('checked', true);
+
+    $('.bg').attr('src', 'assets/img/13-Leitura.png');
+
+    $('#title-ambiente').text('Iluminação leitura');
+}
+
+function ambienteCinema() {
+    $('.toggle').prop('checked', false);
+
+    $('#onoff2, #onoff5, #onoff7').prop('checked', true);
+
+    $('.bg').attr('src', 'assets/img/14-Cinema.png');
+
+    $('#title-ambiente').text('Iluminação cinema');
+}
+
+function ambienteDescanso() {
+    $('.toggle').prop('checked', false);
+
+    $('#onoff2, #onoff3, #onoff6').prop('checked', true);
+
+    $('.bg').attr('src', 'assets/img/15-Descanso.png');
+
+    $('#title-ambiente').text('Iluminação descanso');
+}
+
+
 $(document).ready(function () {
-    alteracaoConformeId();
+    $('#onoff11').click(function () {
+        ambienteTrabalho();
+    });
+    $('#onoff12').click(function () {
+        ambienteLeitura();
+    });
+    $('#onoff13').click(function () {
+        ambienteCinema();
+    });
+    $('#onoff14').click(function () {
+        ambienteDescanso();
+    });
+
+    alternarLuzIndividual();
 });
 
-// alteracaoConformeId();
+
 
 // var elem = document.getElementById("laboratorio");
 // function openFullscreen() {
