@@ -163,23 +163,32 @@
             <div class="modal-content content-ambiente">
                 <div class="modal-header header-ambiente">
                     <h1 class="modal-title" id="modalAmbienteLabel">Escolha um ambiente...</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="fecha-ambiente" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
+                            <style>
+                                svg {
+                                    fill: #b9acac
+                                }
+                            </style>
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></button>
                 </div>
                 <div class="modal-body body-ambiente">
                     <div class="row">
                         <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1" id="onoff11"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff11"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-trabalho.png"
                                     alt="Imagem homem trabalhando com notebook">Trabalho</button>
-                            <button class="btn btn-secondary btn-ambiente m-1" id="onoff12"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff12"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-leitura.png"
                                     alt="Imagem livro">Leitura</button>
                         </div>
                         <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1" id="onoff13"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff13"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-cinema.png"
                                     alt="Imagem claquete">Cinema</button>
-                            <button class="btn btn-secondary btn-ambiente m-1" id="onoff14"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff14"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-descanso.png"
                                     alt="Imagem gato dormindo">Descanso</button>
                         </div>
@@ -202,10 +211,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark w-auto" data-bs-toggle="modal"
+                <div class="modal-footer row">
+                    <button type="button" id="instrucao" class="btn btn-dark col" data-bs-toggle="modal"
                         data-bs-target="#modalInstrucoes">Instruções</button>
-                    <button type="button" class="btn btn-dark w-auto" data-bs-dismiss="modal">Fechar</button>
+                    <span class="col"></span>
+                    <button type="button" class="btn btn-dark col" id="fecha" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -217,7 +227,16 @@
             <div class="modal-content content-introducao">
                 <div class="modal-header header-introducao">
                     <h5 class="modal-title title-introducao" id="modalInstrucoesLabel">Instruções</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="fecha-ambiente" data-bs-dismiss="modal" aria-label="Close"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
+                            <style>
+                                svg {
+                                    fill: #b9acac
+                                }
+                            </style>
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></button>
                 </div>
                 <div class="modal-body body-introducao">
                     <p>Imagine-se projetando um espaço para um casal de artistas: um pianista da orquestra da cidade e

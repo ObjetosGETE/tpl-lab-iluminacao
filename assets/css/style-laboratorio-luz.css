@@ -321,7 +321,28 @@
     box-shadow: var(--sombra-texto);
 }
 
+#instrucao {
+    height: 90px;
+    font-size: var(--font-size-btn-principal);
+    padding: 20px;
+    color: var(--cor-primaria-font);
+    text-transform: uppercase;
+}
 
+#fecha {
+    background-color: var(--cor-secundaria-bg) !important;
+    height: 90px;
+    font-size: var(--font-size-btn-principal);
+    padding: 20px;
+    color: var(--cor-secundaria-font);
+    text-transform: uppercase;
+}
+
+.fecha-ambiente {
+    background: none;
+    border: none;
+    margin: 10px;
+}
 
 
 /*********************************************************************/
