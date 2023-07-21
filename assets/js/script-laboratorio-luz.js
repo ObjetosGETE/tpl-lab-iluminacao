@@ -46,20 +46,6 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-    $('#comecar').click(function () {
-        $('#inicial').addClass('d-none');
-        $('#conteudo').removeClass('d-none');
-    });
-});
-
-$(document).ready(function () {
-    $('.menu-toggle').click(function () {
-        $(this).toggleClass('open');
-        $('.menu-body').toggleClass('open');
-    });
-});
-
 
 function alternarLuzIndividual() {
     $('.toggle').change(function () {
@@ -166,6 +152,17 @@ function ambienteDescanso() {
 
 
 $(document).ready(function () {
+
+    $('#comecar').click(function () {
+        $('#inicial').addClass('d-none');
+        $('#conteudo').removeClass('d-none');
+    });
+
+    $('.menu-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.menu-body').toggleClass('open');
+    });
+
     $('#onoff11').click(function () {
         ambienteTrabalho();
     });
