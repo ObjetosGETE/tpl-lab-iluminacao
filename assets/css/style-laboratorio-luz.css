@@ -94,7 +94,7 @@
 }
 
 .efeito-luminoso:hover {
-    color: var(--cor-secundaria-font);
+    color: var(--cor-secundaria-font) !important;
     background: var(--efeito-luminoso-hover-background);
     box-shadow: var(--efeito-luminoso-hover-box-shadow);
     transition-delay: 600ms;

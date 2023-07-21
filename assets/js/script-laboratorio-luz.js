@@ -53,6 +53,14 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.menu-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.menu-body').toggleClass('open');
+    });
+});
+
+
 function alteracaoConformeId() {
     $('.toggle').change(function () {
         var backgrounds = {
@@ -66,34 +74,44 @@ function alteracaoConformeId() {
             'onoff8': 'assets/img/09-Perfil-led.png',
             'onoff9': 'assets/img/10-Tubular.png',
             'onoff10': 'assets/img/11-Halopin.png',
-            'onoff11': 'assets/img/12-Trabalho.png',
-            'onoff12': 'assets/img/13-Leitura.png',
-            'onoff13': 'assets/img/14-Cinema.png',
-            'onoff14': 'assets/img/15-Descanso.png',
             'onoff15': 'assets/img/16-Todas-acesas.png',
             'onoff16': 'assets/img/01-Luzes-apagadas.png'
         };
 
         var background = $('.bg');
-        var checkedCheckboxes = $('.toggle:checked');
+        var checkedCheckboxId = $(this).attr('id');
 
-        if (checkedCheckboxes.length > 0) {
-            var checkedCheckboxId = checkedCheckboxes.last().attr('id');
+        if ($(this).prop('checked')) {
             background.attr('src', backgrounds[checkedCheckboxId]);
             uncheckOtherCheckboxes(checkedCheckboxId);
 
             if (checkedCheckboxId === 'onoff1') {
-                $('#title-ambiente').text('deu certo');
+                $('#title-ambiente').text('Iluminação bulbo');
             } else if (checkedCheckboxId === 'onoff2') {
-                $('#title-ambiente').text('também deu certo');
+                $('#title-ambiente').text('Iluminação dicróica');
             } else if (checkedCheckboxId === 'onoff3') {
-                $('#title-ambiente').text('aee');
+                $('#title-ambiente').text('Iluminação mini dicróica');
+            } else if (checkedCheckboxId === 'onoff4') {
+                $('#title-ambiente').text('Iluminação par');
+            } else if (checkedCheckboxId === 'onoff5') {
+                $('#title-ambiente').text('Iluminação arandela');
+            } else if (checkedCheckboxId === 'onoff6') {
+                $('#title-ambiente').text('Iluminação AR');
+            } else if (checkedCheckboxId === 'onoff7') {
+                $('#title-ambiente').text('Iluminação balizador');
+            } else if (checkedCheckboxId === 'onoff8') {
+                $('#title-ambiente').text('Iluminação perfil led');
+            } else if (checkedCheckboxId === 'onoff9') {
+                $('#title-ambiente').text('Iluminação tubular');
+            } else if (checkedCheckboxId === 'onoff10') {
+                $('#title-ambiente').text('Iluminação halopin');
+            } else if (checkedCheckboxId === 'onoff15') {
+                $('#title-ambiente').text('Todas as luzes acesas');
             } else {
-                $('#title-ambiente').text('Luzes apagadas');
+                $('#title-ambiente').text('Todas as luzes apagadas');
             }
         } else {
             background.attr('src', 'assets/img/01-Luzes-apagadas.png');
-            uncheckAllCheckboxes();
             $('#title-ambiente').text('Luzes apagadas');
         }
     });
@@ -101,19 +119,13 @@ function alteracaoConformeId() {
     function uncheckOtherCheckboxes(checkedCheckboxId) {
         $('.toggle').not('#' + checkedCheckboxId).prop('checked', false);
     }
-
-    function uncheckAllCheckboxes() {
-        $('.toggle').prop('checked', false);
-    }
 }
+
 $(document).ready(function () {
-    $('.menu-toggle').click(function () {
-        $(this).toggleClass('open');
-        $('.menu-body').toggleClass('open');
-    });
+    alteracaoConformeId();
 });
 
-alteracaoConformeId();
+// alteracaoConformeId();
 
 // var elem = document.getElementById("laboratorio");
 // function openFullscreen() {
