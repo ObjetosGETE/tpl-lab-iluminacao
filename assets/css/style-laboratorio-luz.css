@@ -268,14 +268,15 @@
 .modal-footer {
     border-top: none;
 }
-.ajuste{
+
+.ajuste {
     margin-left: 25%;
     margin-top: 15%;
 }
 
 .onoff-modal input.toggle {
     display: none;
-    
+
 }
 
 .onoff-modal input.toggle+label {
@@ -286,15 +287,15 @@
     border-radius: 30px;
 }
 
-.onoff-modal input.toggle + label::before {
-	content: "";
-	display: block;
-	height: 40px;
-	border-radius: 30px;
-	transition: 0.1s ease-in-out;
-	background-color: var(--cor-secundaria-bg);
-	box-shadow: var(--sombra);
-	width: 175px;
+.onoff-modal input.toggle+label::before {
+    content: "";
+    display: block;
+    height: 40px;
+    border-radius: 30px;
+    transition: 0.1s ease-in-out;
+    background-color: var(--cor-secundaria-bg);
+    box-shadow: var(--sombra);
+    width: 175px;
 }
 
 .onoff-modal input.toggle+label:after {
