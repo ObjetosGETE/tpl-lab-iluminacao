@@ -11,7 +11,7 @@
     --cor-secundaria-borda: #E74D3C;
 
     --efeito-luminoso-hover-background: #FFC868;
-    --efeito-luminoso-hover-box-shadow: 0 0 10px #FFC868, 0 0 40px #FFC868, 0 0 80px #FFC868;
+    --efeito-luminoso-hover-box-shadow: 0 0 10px #FFC868, 0 0 5px #FFC868, 0 0 20px #FFC868;
     --efeito-luminoso-hover-border-color: #FFC868;
 
     --sombra: 3px 5px 15px black;
@@ -62,14 +62,17 @@
 }
 
 #comecar {
-    width: 696px;
+    width: 596px;
     background-color: var(--cor-secundaria-bg) !important;
-    height: 105px;
+    height: 100px;
     font-size: var(--font-size-btn-principal);
-    padding: 29px;
     margin-top: 56px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
+}
+
+#comecar:hover {
+    transform: scale(1.1);
 }
 
 
@@ -85,7 +88,7 @@
     transition: 0.2s;
     background-color: var(--cor-principal-bg);
     border: 3px solid var(--cor-secundaria-borda);
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
@@ -99,6 +102,7 @@
     box-shadow: var(--efeito-luminoso-hover-box-shadow);
     transition-delay: 600ms;
     border: 3px solid var(--efeito-luminoso-hover-border-color);
+    transform: scale(1.1);
 }
 
 /*********************************************************************/
@@ -111,13 +115,12 @@
 
 .btn-modal {
     background-color: var(--cor-principal-bg);
-    border-radius: 10px;
-    width: 1126px;
+    width: auto;
     margin-inline: 37px;
 }
 
 #title-ambiente {
-    padding: 20px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: var(--font-size-titulo);
 }
@@ -257,7 +260,6 @@
 .title-todas {
     font-size: var(--font-size-paragrafo);
     color: var(--cor-principal-font);
-    margin-left: 10%;
 }
 
 .fundo-btn-modal {
@@ -267,11 +269,6 @@
 
 .modal-footer {
     border-top: none;
-}
-
-.ajuste {
-    margin-left: 25%;
-    margin-top: 15%;
 }
 
 .onoff-modal input.toggle {
@@ -322,21 +319,29 @@
 }
 
 #instrucao {
-    height: 90px;
+    height: 70px;
     font-size: var(--font-size-btn-principal);
-    padding: 20px;
+    padding: 5px;
     color: var(--cor-primaria-font);
     text-transform: uppercase;
 }
 
+#instrucao:hover {
+   transform: scale(1.1);
+}
+
 #fecha {
     background-color: var(--cor-secundaria-bg) !important;
-    height: 90px;
+    height: 70px;
     font-size: var(--font-size-btn-principal);
-    padding: 20px;
+    padding: 5px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
 }
+
+#fecha:hover {
+    transform: scale(1.1);
+ }
 
 .fecha-ambiente {
     background: none;
@@ -379,6 +384,12 @@
     margin-top: 56px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
+}
+
+.btn-explorar:hover {
+    transform: scale(1.1);
+    background-color: var(--cor-secundaria-bg);
+    color: var(--cor-secundaria-font);
 }
 
 /*********************************************************************/

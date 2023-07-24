@@ -15,22 +15,23 @@
 
 <body>
     <div class="body-laboratorio" id="laboratorio">
-        <div id="inicial" class="d-flex justify-content-lg-center">
+        <div id="inicial" class="justify-content-lg-center text-center">
             <div class="position-relative">
                 <img src="assets/img/bg-capa.png" alt="backgroud">
             </div>
             <div class="position-absolute d-flex title-inicial">
                 <h1 class="principal"><span class="secundario">Simulador:</span><br>
-                    <strong>Laboratório da luz</strong> </h1>
+                    <strong>Laboratório da luz</strong>
+                </h1>
             </div>
-            <div class="div-comecar position-absolute">
-                <p class="p-inicial d-flex">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual,
+            <div class="div-comecar position-absolute justify-content-center text-center">
+                <p class="p-inicial">Bem-vindo(a) ao nosso simulador de iluminação! Neste laboratório virtual,
                     você
                     terá a oportunidade de experimentar os efeitos de diversas lâmpadas e explorar diferentes
                     composições para criar um ambiente acolhedor e inspirador.
                 </p>
-                <button type="button" class="btn btn-secondary d-flex justify-content-lg-center" id="comecar"  data-bs-toggle="modal"
-                data-bs-target="#modalInstrucoes">Vamos
+                <button type="button" class="btn btn-secondary justify-content-center" id="comecar"
+                    data-bs-toggle="modal" data-bs-target="#modalInstrucoes">Vamos
                     começar?</button>
             </div>
         </div>
@@ -54,15 +55,14 @@
                                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                         </svg>
                     </button>
-                    <div class="col-5 btn-modal">
-                        <a id="title-ambiente" class="efeito-luminoso" href="#" data-bs-toggle="modal"
+                    <div class="col-5 btn-modal rounded-3">
+                        <div id="title-ambiente" class="efeito-luminoso rounded-3" href="#" data-bs-toggle="modal"
                             data-bs-target="#modalAmbiente">
                             Luzes apagadas
-                        </a>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-principais efeito-luminoso col-1"
-                        onclick="openFullscreen();"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                            viewBox="0 0 448 512">
+                    <!-- <button type="button" class="btn btn-principais efeito-luminoso col-1" id="fullScreen"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
                             <style>
                                 svg {
                                     fill: #B9ACAC
@@ -71,7 +71,7 @@
                             <path
                                 d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />
                         </svg>
-                    </button>
+                    </button> -->
                 </div>
                 <div class="menu-header">
                     <button class="menu-toggle w-100">
@@ -193,30 +193,30 @@
                                     class="img-fluid rounded-3" src="assets/img/btn-descanso.png"
                                     alt="Imagem gato dormindo">Descanso</button>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 align-items-center">
                             <div class="onoff-modal m-3 fundo-btn-modal rounded-3">
-                                <h3 class="title-todas">Acender todas as luzes</h3>
-                                <div class="ajuste">
+                                <h3 class="title-todas text-center">Acender todas as luzes</h3>
+                                <div class="m-5">
                                     <input type="checkbox" class="toggle" id="onoff15">
                                     <label for="onoff15"></label>
                                 </div>
                             </div>
                             <div class="onoff-modal m-3 fundo-btn-modal rounded-3">
-                                <h3 class="title-todas">Apagar todas as luzes</h3>
-                                <div class="ajuste">
+                                <h3 class="title-todas text-center">Apagar todas as luzes</h3>
+                                <div class="m-5">
                                     <input type="checkbox" class="toggle" id="onoff16">
                                     <label for="onoff16"></label>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer row">
-                    <button type="button" id="instrucao" class="btn btn-dark col" data-bs-toggle="modal"
+                    <button type="button" id="instrucao" class="btn btn-dark col m-3" data-bs-toggle="modal"
                         data-bs-target="#modalInstrucoes">Instruções</button>
                     <span class="col"></span>
-                    <button type="button" class="btn btn-dark col" id="fecha" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-dark col m-3" id="fecha"
+                        data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>

@@ -91,6 +91,9 @@ function alternarLuzIndividual() {
                 $('#title-ambiente').text('Iluminação tubular');
             } else if (checkedCheckboxId === 'onoff10') {
                 $('#title-ambiente').text('Iluminação halopin');
+            } else if (checkedCheckboxId === 'onoff15') {
+                $('#title-ambiente').text('Todas as luzes acesas');
+                $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', true);
             } else {
                 $('#title-ambiente').text('Todas as luzes apagadas');
             }
@@ -104,10 +107,6 @@ function alternarLuzIndividual() {
         $('.toggle').not('#' + checkedCheckboxId).prop('checked', false);
     }
 }
-
-
-
-
 
 
 function ambienteTrabalho() {
@@ -180,14 +179,3 @@ $(document).ready(function () {
 });
 
 
-
-// var elem = document.getElementById("laboratorio");
-// function openFullscreen() {
-//   if (elem.requestFullscreen) {
-//     elem.requestFullscreen();
-//   } else if (elem.webkitRequestFullscreen) {
-//     elem.webkitRequestFullscreen();
-//   } else if (elem.msRequestFullscreen) { 
-//     elem.msRequestFullscreen();
-//   }
-// }
