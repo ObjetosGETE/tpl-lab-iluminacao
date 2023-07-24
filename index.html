@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-laboratorio-luz.css">
     <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+    
 </head>
 
 <body>
+    
     <div class="body-laboratorio" id="laboratorio">
         <div id="inicial" class="d-flex justify-content-center">
             <div class="position-relative">
@@ -28,7 +30,7 @@
                     você terá a oportunidade de experimentar os efeitos de diversas lâmpadas e explorar diferentes
                     composições para criar um ambiente acolhedor e inspirador.
                 </p>
-                <button type="button" class="btn btn-secondary justify-content-center" id="comecar"
+                <button type="button" class="btn btn-secondary justify-content-center som-clique" id="comecar"
                     data-bs-toggle="modal" data-bs-target="#modalInstrucoes">Vamos começar?
                 </button>
             </div>
@@ -40,19 +42,19 @@
             </div>
             <div class="menu-container position-absolute w-75 row d-flex justify-content-center">
                 <div class="row m-3">
-                    <button type="button" class="btn btn-principais efeito-painel col-1" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
+                    <button type="button" class="btn btn-principais efeito-painel col-1 som-clique" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
                         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
                             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                         </svg>
                     </button>
                     <div class="col-5 btn-modal rounded-3">
-                        <div id="title-ambiente" class="efeito-painel rounded-3" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
+                        <div id="title-ambiente" class="efeito-painel rounded-3 som-clique" data-bs-toggle="modal" data-bs-target="#modalAmbiente">
                             Luzes apagadas
                         </div>
                     </div>
                 </div>
                 <div class="menu-header">
-                    <button class="menu-toggle w-100">
+                    <button class="menu-toggle w-100 som-clique">
                         Painel de controle
                     </button>
                 </div>
@@ -140,7 +142,7 @@
             <div class="modal-content content-ambiente">
                 <div class="modal-header header-ambiente">
                     <h1 class="modal-title" id="modalAmbienteLabel">Escolha um ambiente...</h1>
-                    <button type="button" class="fecha-ambiente" data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="fecha-ambiente som-fechar" data-bs-dismiss="modal" aria-label="Close">
                         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
                             <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
@@ -149,18 +151,18 @@
                 <div class="modal-body body-ambiente">
                     <div class="row">
                         <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff11"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center som-clique" id="onoff11"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-trabalho.png"
                                     alt="Imagem homem trabalhando com notebook">Trabalho</button>
-                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff12"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center som-clique" id="onoff12"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-leitura.png"
                                     alt="Imagem livro">Leitura</button>
                         </div>
                         <div class="col-md-4">
-                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff13"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center som-clique" id="onoff13"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-cinema.png"
                                     alt="Imagem claquete">Cinema</button>
-                            <button class="btn btn-secondary btn-ambiente m-1 text-center" id="onoff14"><img
+                            <button class="btn btn-secondary btn-ambiente m-1 text-center som-clique" id="onoff14"><img
                                     class="img-fluid rounded-3" src="assets/img/btn-descanso.png"
                                     alt="Imagem gato dormindo">Descanso</button>
                         </div>
@@ -183,10 +185,10 @@
                     </div>
                 </div>
                 <div class="modal-footer row">
-                    <button type="button" id="instrucao" class="btn btn-dark col m-3" data-bs-toggle="modal"
+                    <button type="button" id="instrucao" class="btn btn-dark col m-3 som-clique" data-bs-toggle="modal"
                         data-bs-target="#modalInstrucoes">Instruções</button>
                     <span class="col"></span>
-                    <button type="button" class="btn btn-dark col m-3" id="fecha"
+                    <button type="button" class="btn btn-dark col m-3 som-fechar" id="fecha"
                         data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
@@ -199,7 +201,7 @@
             <div class="modal-content content-introducao">
                 <div class="modal-header header-introducao">
                     <h5 class="modal-title title-introducao" id="modalInstrucoesLabel">Instruções</h5>
-                    <button type="button" class="fecha-ambiente" data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="fecha-ambiente som-fechar" data-bs-dismiss="modal" aria-label="Close">
                         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
                             <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
@@ -214,7 +216,7 @@
                     </p>
                 </div>
                 <div class="modal-footer d-flex justify-content-lg-center">
-                    <button type="button" class="btn btn-secondary btn-explorar m-4" data-bs-dismiss="modal">
+                    <button type="button" class="btn btn-secondary btn-explorar m-4 som-clique" data-bs-dismiss="modal">
                         Começar a explorar
                     </button>
                 </div>
@@ -236,8 +238,8 @@
     </div>
 
     <!-- Versao atual do handtalk -->
-
-    <script>
+    <!-- Music by <a href="https://pixabay.com/pt/users/harumachimusic-13470593/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=158938">HarumachiMusic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=158938">Pixabay</a> -->
+<script>
         var scriptElem = document.createElement("script");
         scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
             scriptElem.charset = "UTF-8",

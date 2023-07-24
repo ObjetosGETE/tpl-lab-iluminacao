@@ -37,6 +37,24 @@ function resizeBodyBodyLaboratorio() {
     }
 }
 
+function playToggleSound() {
+    const audio = new Audio('/assets/audio/acende.mp3');
+    audio.play();
+}
+
+function somClique() {
+    $("body").on("click", '.som-fechar', function () {
+        var audio = new Audio('assets/audio/som_modal.mp3');
+        audio.play();
+    });
+}
+
+function somFechar() {
+    $("body").on("click", '.som-clique', function () {
+        var audio = new Audio('assets/audio/clique.mp3');
+        audio.play();
+    });
+}
 
 function alternarLuzIndividual() {
     $('.toggle').change(function () {
@@ -58,9 +76,11 @@ function alternarLuzIndividual() {
         var background = $('.bg');
         var checkedCheckboxId = $(this).attr('id');
 
+
         if ($(this).prop('checked')) {
             background.attr('src', backgrounds[checkedCheckboxId]);
             uncheckOtherCheckboxes(checkedCheckboxId);
+            playToggleSound();
 
             if (checkedCheckboxId === 'onoff1') {
                 $('#title-ambiente').text('Iluminação bulbo');
@@ -91,6 +111,7 @@ function alternarLuzIndividual() {
             }
         } else {
             background.attr('src', 'assets/img/01-Luzes-apagadas.png');
+            playToggleSound();
             $('#title-ambiente').text('Todas as luzes apagadas');
             $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', false);
         }
@@ -144,7 +165,7 @@ function ambienteDescanso() {
 
 
 $(document).ready(function () {
-    
+
     resizeBodyBodyLaboratorio()
     $(window).resize(function () {
         resizeBodyBodyLaboratorio()
@@ -174,4 +195,6 @@ $(document).ready(function () {
     });
 
     alternarLuzIndividual();
+    somFechar();
+    somClique();
 });
