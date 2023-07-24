@@ -10,10 +10,6 @@
     --cor-primaria-borda: #404040;
     --cor-secundaria-borda: #E74D3C;
 
-    --efeito-luminoso-hover-background: #FFC868;
-    --efeito-luminoso-hover-box-shadow: 0 0 10px #FFC868, 0 0 5px #FFC868, 0 0 20px #FFC868;
-    --efeito-luminoso-hover-border-color: #FFC868;
-
     --sombra: 3px 5px 15px black;
     --sombra-texto: 2px 2px 4px black;
 
@@ -25,9 +21,9 @@
 
     --font-size-titulo: 45px;
     --font-size-subtitulo: 35px;
-    --font-size-btn-principal: 35px;
-    --font-size-paragrafo: 33px;
-    --font-size-legenda: 24px;
+    --font-size-btn-principal: 30px;
+    --font-size-paragrafo: 30px;
+    --font-size-legenda: 21px;
 }
 
 /*********************************************************************/
@@ -75,12 +71,11 @@
     transform: scale(1.1);
 }
 
-
 /*********************************************************************/
-/*************************** efeito luminoso *************************/
+/**************************** btn controle ***************************/
 /*********************************************************************/
 
-.efeito-luminoso {
+.efeito-painel {
     position: relative;
     display: inline-block;
     font-size: var(--font-size-btn-principal);
@@ -92,22 +87,17 @@
     height: 100%;
 }
 
-.efeito-luminoso:visited {
+.efeito-painel:visited {
     color: var(--cor-principal-font);
 }
 
-.efeito-luminoso:hover {
-    color: var(--cor-secundaria-font) !important;
-    background: var(--efeito-luminoso-hover-background);
-    box-shadow: var(--efeito-luminoso-hover-box-shadow);
-    transition-delay: 600ms;
-    border: 3px solid var(--efeito-luminoso-hover-border-color);
+.efeito-painel:hover {
     transform: scale(1.1);
 }
 
-/*********************************************************************/
-/**************************** btn controle ***************************/
-/*********************************************************************/
+svg {
+    fill: #B9ACAC
+}
 
 .btn-principais {
     width: 118px;
@@ -121,8 +111,9 @@
 
 #title-ambiente {
     padding: 10px 10px;
-    text-decoration: none;
     font-size: var(--font-size-titulo);
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 
@@ -151,6 +142,7 @@
     text-align: left;
     padding: 15px;
     font-size: var(--font-size-subtitulo);
+    text-transform: uppercase;
 }
 
 .row {
@@ -184,6 +176,7 @@
     height: 100px;
     width: 32px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .onoff input.toggle+label:before {
@@ -264,7 +257,6 @@
 
 .fundo-btn-modal {
     background-color: var(--cor-primaria-borda);
-    padding: 10px;
 }
 
 .modal-footer {
@@ -282,6 +274,7 @@
     height: 100px;
     width: 32px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .onoff-modal input.toggle+label::before {
@@ -327,7 +320,7 @@
 }
 
 #instrucao:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #fecha {
@@ -341,7 +334,7 @@
 
 #fecha:hover {
     transform: scale(1.1);
- }
+}
 
 .fecha-ambiente {
     background: none;
@@ -410,7 +403,7 @@
 /***************************** vire o celular *************************/
 /**********************************************************************/
 .p-paisagem {
-    color: var(--cor-terciaria-font);
+    color: var(--p-paisagem-text-color);
     text-align: center;
 }
 

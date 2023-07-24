@@ -38,14 +38,6 @@ function resizeBodyBodyLaboratorio() {
     }
 }
 
-$(document).ready(function () {
-    resizeBodyBodyLaboratorio()
-    $(window).resize(function () {
-        resizeBodyBodyLaboratorio()
-    })
-
-});
-
 
 function alternarLuzIndividual() {
     $('.toggle').change(function () {
@@ -96,10 +88,12 @@ function alternarLuzIndividual() {
                 $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', true);
             } else {
                 $('#title-ambiente').text('Todas as luzes apagadas');
+                $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', false);
             }
         } else {
             background.attr('src', 'assets/img/01-Luzes-apagadas.png');
             $('#title-ambiente').text('Todas as luzes apagadas');
+            $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', false);
         }
     });
 
@@ -152,6 +146,12 @@ function ambienteDescanso() {
 
 $(document).ready(function () {
 
+
+    resizeBodyBodyLaboratorio()
+    $(window).resize(function () {
+        resizeBodyBodyLaboratorio()
+    });
+
     $('#comecar').click(function () {
         $('#inicial').addClass('d-none');
         $('#conteudo').removeClass('d-none');
@@ -177,5 +177,3 @@ $(document).ready(function () {
 
     alternarLuzIndividual();
 });
-
-
