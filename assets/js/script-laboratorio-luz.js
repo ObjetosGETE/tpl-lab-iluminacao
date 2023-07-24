@@ -16,7 +16,6 @@ function escalaProporcao(largura, altura) {
         proporcao = proporcaoLargura / 100;
     }
 
-    console.log(proporcao, proporcaoAltura, proporcaoLargura)
     return [proporcao, larguraAltura, larguraAlturaAuto];
 }
 
@@ -145,8 +144,7 @@ function ambienteDescanso() {
 
 
 $(document).ready(function () {
-
-
+    
     resizeBodyBodyLaboratorio()
     $(window).resize(function () {
         resizeBodyBodyLaboratorio()
