@@ -105,9 +105,11 @@ function alternarLuzIndividual() {
             } else if (checkedCheckboxId === 'onoff15') {
                 $('#title-ambiente').text('Todas as luzes acesas');
                 $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', true);
+                $('#modalAmbiente').modal('hide');
             } else {
                 $('#title-ambiente').text('Todas as luzes apagadas');
                 $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', false);
+                $('#modalAmbiente').modal('hide');
             }
         } else {
             background.attr('src', 'assets/img/01-Luzes-apagadas.png');
@@ -131,6 +133,7 @@ function ambienteTrabalho() {
     $('.bg').attr('src', 'assets/img/12-trabalho.png');
 
     $('#title-ambiente').text('Iluminação trabalho');
+    $('#modalAmbiente').modal('hide');
 }
 
 function ambienteLeitura() {
@@ -141,6 +144,7 @@ function ambienteLeitura() {
     $('.bg').attr('src', 'assets/img/13-Leitura.png');
 
     $('#title-ambiente').text('Iluminação leitura');
+    $('#modalAmbiente').modal('hide');
 }
 
 function ambienteCinema() {
@@ -151,6 +155,7 @@ function ambienteCinema() {
     $('.bg').attr('src', 'assets/img/14-Cinema.png');
 
     $('#title-ambiente').text('Iluminação cinema');
+    $('#modalAmbiente').modal('hide');
 }
 
 function ambienteDescanso() {
@@ -161,6 +166,7 @@ function ambienteDescanso() {
     $('.bg').attr('src', 'assets/img/15-Descanso.png');
 
     $('#title-ambiente').text('Iluminação descanso');
+    $('#modalAmbiente').modal('hide');
 }
 
 

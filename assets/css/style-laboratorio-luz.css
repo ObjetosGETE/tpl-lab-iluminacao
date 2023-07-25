@@ -21,8 +21,8 @@
 
     --font-size-titulo: 45px;
     --font-size-subtitulo: 35px;
-    --font-size-btn-principal: 30px;
-    --font-size-paragrafo: 30px;
+    --font-size-btn-principal: 33px;
+    --font-size-paragrafo: 33px;
     --font-size-legenda: 21px;
 }
 
@@ -34,7 +34,6 @@
     top: 50px;
     color: var(--cor-terciaria-font);
     font-weight: bold;
-    text-shadow: var(--sombra-texto);
 }
 
 .principal {
@@ -55,6 +54,8 @@
     padding: 30px;
     margin-top: 40px;
     border: 15px solid var(--cor-primaria-borda);
+    opacity: 0.9;
+    color: white;
 }
 
 #comecar {
@@ -85,6 +86,7 @@
     border: 3px solid var(--cor-secundaria-borda);
     width: auto;
     height: 100%;
+    border-radius: 20px;
 }
 
 .efeito-painel:visited {
@@ -96,24 +98,28 @@
 }
 
 svg {
-    fill: #B9ACAC
+    fill: #B9ACAC;
+}
+
+.vermelho {
+    fill: var(--cor-terciaria-font) !important;
 }
 
 .btn-principais {
     width: 118px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .btn-modal {
     background-color: var(--cor-principal-bg);
     width: auto;
     margin-inline: 37px;
+    border-radius: 20px;
 }
 
 #title-ambiente {
     padding: 10px 10px;
     font-size: var(--font-size-titulo);
-    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -128,9 +134,9 @@ svg {
     left: 235px;
     overflow: hidden;
     transition: height 0.3s ease;
-    border-radius: 5px;
     margin: 15px;
     color: var(--cor-principal-font);
+    border-radius: 0px 0px 30px 30px;
 }
 
 .menu-toggle {
@@ -139,11 +145,10 @@ svg {
     background-color: var(--cor-principal-bg);
     border: none;
     color: var(--cor-principal-font);
-    border-radius: 5px;
+    border-radius: 30px 30px 0px 0px;
     text-align: left;
     padding: 15px;
     font-size: var(--font-size-subtitulo);
-    text-transform: uppercase;
 }
 
 .row {
@@ -165,6 +170,7 @@ svg {
 .legenda {
     font-size: var(--font-size-legenda);
     color: var(--cor-principal-font);
+    text-transform: uppercase;
 }
 
 .onoff input.toggle {
@@ -224,6 +230,7 @@ svg {
 
 .title-ambiente {
     font-size: var(--font-size-subtitulo);
+    border-radius: 30px;
 }
 
 .content-ambiente {
@@ -233,7 +240,6 @@ svg {
 
 .body-ambiente {
     border-bottom: none;
-    box-shadow: var(--sombra);
 }
 
 .btn-secondary {
@@ -245,6 +251,11 @@ svg {
     font-size: var(--font-size-btn-principal);
     color: var(--cor-principal-font);
     text-align: left;
+    background-color: none;
+}
+
+.btn-ambiente:hover {
+    background-color: var(--cor-principal-bg);
 }
 
 .btn-ambiente:hover {
@@ -254,6 +265,8 @@ svg {
 .title-todas {
     font-size: var(--font-size-paragrafo);
     color: var(--cor-principal-font);
+    text-transform: uppercase;
+    font-size: 25px !important;
 }
 
 .fundo-btn-modal {
@@ -331,6 +344,7 @@ svg {
     padding: 5px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
+    border: none;
 }
 
 #fecha:hover {
@@ -343,6 +357,9 @@ svg {
     margin: 10px;
 }
 
+.footer-ambiente {
+    background-color: #404040;
+}
 
 /*********************************************************************/
 /********************** Estilo modal introdução **********************/
@@ -360,13 +377,13 @@ svg {
 }
 
 .content-introducao {
-    background-color: var(--cor-terciaria-bg);
+    background-color: #F2F2F2;
 }
 
 .body-introducao {
     font-size: var(--font-size-paragrafo);
     padding: 60px;
-    color: var(--cor-principal-font);
+    color: #707070;
 }
 
 .btn-explorar {
@@ -398,6 +415,7 @@ svg {
     top: calc(50% - 1080px / 2);
     margin: auto;
     color: var(--cor-principal-font);
+    font-family: 'Gothic A1', sans-serif;
 }
 
 /**********************************************************************/
