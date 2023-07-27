@@ -1,7 +1,17 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/assets/font/century_gothic.otf') format('truetype');
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+}
+
 :root {
     --cor-principal-font: #B9ACAC;
     --cor-secundaria-font: black;
     --cor-terciaria-font: #E74D3C;
+    --cor-quaternaria-font: white;
 
     --cor-principal-bg: #333;
     --cor-secundaria-bg: #B9ACAC;
@@ -19,11 +29,14 @@
     --p-paisagem-text-color: white;
     --modo-smart-bg-color: #F5866C;
 
+    --font-size-title-principal: 74px;
+    --font-size-title-secundario: 29px;
     --font-size-titulo: 45px;
     --font-size-subtitulo: 35px;
     --font-size-btn-principal: 33px;
     --font-size-paragrafo: 33px;
-    --font-size-legenda: 21px;
+    --font-size-legenda: 25px;
+
 }
 
 /*********************************************************************/
@@ -31,17 +44,20 @@
 /*********************************************************************/
 
 .title-inicial {
-    top: 50px;
+    top: 71px;
     color: var(--cor-terciaria-font);
-    font-weight: bold;
 }
 
 .principal {
-    font-size: 74px;
+    font-size: var(--font-size-title-principal);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.16);
+    font-family: 'Century Gothic bold', sans-serif;
+    line-height: 0.9;
 }
 
 .secundario {
-    font-size: var(--font-size-titulo);
+    font-size: var(--font-size-title-secundario);
+    text-transform: uppercase;
 }
 
 .div-comecar {
@@ -55,7 +71,7 @@
     margin-top: 40px;
     border: 15px solid var(--cor-primaria-borda);
     opacity: 0.9;
-    color: white;
+    color: var(--cor-quaternaria-font);
 }
 
 #comecar {
@@ -98,7 +114,7 @@
 }
 
 svg {
-    fill: #B9ACAC;
+    fill: #ffffff;
 }
 
 .vermelho {
@@ -111,7 +127,6 @@ svg {
 }
 
 .btn-modal {
-    background-color: var(--cor-principal-bg);
     width: auto;
     margin-inline: 37px;
     border-radius: 20px;
@@ -140,15 +155,32 @@ svg {
 }
 
 .menu-toggle {
-    display: block;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     background-color: var(--cor-principal-bg);
     border: none;
     color: var(--cor-principal-font);
     border-radius: 30px 30px 0px 0px;
     text-align: left;
-    padding: 15px;
     font-size: var(--font-size-subtitulo);
+}
+
+.esquerda {
+    flex: 1;
+}
+
+.direita {
+    margin-left: 10px;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+#seta {
+    fill: var(--cor-principal-font);
 }
 
 .row {
@@ -161,6 +193,7 @@ svg {
     transition: height 0.3s ease;
     background-color: var(--cor-principal-bg);
     border: 2px solid var(--cor-principal-bg);
+    box-shadow: var(--sombra);
 }
 
 .menu-body.open {
@@ -180,16 +213,17 @@ svg {
 .onoff input.toggle+label {
     display: inline-block;
     position: relative;
-    height: 100px;
-    width: 32px;
+    height: 125px;
+    width: 40px;
     border-radius: 30px;
     cursor: pointer;
+    margin-top: 35px;
 }
 
 .onoff input.toggle+label:before {
     content: "";
     display: block;
-    height: 100px;
+    height: 120px;
     border-radius: 30px;
     transition: 0.1s ease-in-out;
     background-color: var(--cor-secundaria-bg);
@@ -199,9 +233,9 @@ svg {
 .onoff input.toggle+label:after {
     content: "";
     position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 68px;
+    height: 38px;
+    width: 38px;
+    top: 79px;
     left: 0px;
     border-radius: 30px;
     background: var(--toggle-button-bg-color);
@@ -210,7 +244,7 @@ svg {
 }
 
 .onoff input.toggle:checked+label::before {
-    width: 30px;
+    width: 40px;
     background: var(--toggle-button-bg-color-checked);
 }
 
@@ -228,9 +262,15 @@ svg {
     box-shadow: var(--sombra);
 }
 
-.title-ambiente {
+#title-ambiente {
+    color: var(--cor-quaternaria-font);
+    cursor: pointer;
+    text-shadow: 0px 3px 6px rgb(0, 0, 0);
+    padding-inline: 32px;
+}
+
+#modalAmbienteLabel {
     font-size: var(--font-size-subtitulo);
-    border-radius: 30px;
 }
 
 .content-ambiente {
@@ -248,25 +288,22 @@ svg {
 }
 
 .btn-ambiente {
-    font-size: var(--font-size-btn-principal);
-    color: var(--cor-principal-font);
+    font-size: var(--font-size-subtitulo);
+    color: var(--cor-quaternaria-font);
     text-align: left;
-    background-color: none;
 }
 
 .btn-ambiente:hover {
-    background-color: var(--cor-principal-bg);
-}
-
-.btn-ambiente:hover {
-    transform: scale(1.1);
+    background-color: var(--cor-principal-bg) !important;
+    border-color: var(--cor-secundaria-borda) !important;
+    color: var(--cor-terciaria-font);
 }
 
 .title-todas {
-    font-size: var(--font-size-paragrafo);
     color: var(--cor-principal-font);
     text-transform: uppercase;
     font-size: 25px !important;
+    padding-top: 20px;
 }
 
 .fundo-btn-modal {
@@ -294,7 +331,7 @@ svg {
 .onoff-modal input.toggle+label::before {
     content: "";
     display: block;
-    height: 40px;
+    height: 50px;
     border-radius: 30px;
     transition: 0.1s ease-in-out;
     background-color: var(--cor-secundaria-bg);
@@ -305,8 +342,8 @@ svg {
 .onoff-modal input.toggle+label:after {
     content: "";
     position: absolute;
-    height: 37px;
-    width: 37px;
+    height: 48px;
+    width: 48px;
     top: 0px;
     left: 0px;
     border-radius: 30px;
@@ -331,6 +368,11 @@ svg {
     padding: 5px;
     color: var(--cor-primaria-font);
     text-transform: uppercase;
+}
+
+.ajuste {
+    margin-top: 15%;
+    margin-left: 25%;
 }
 
 #instrucao:hover {
@@ -372,7 +414,7 @@ svg {
 }
 
 #modalInstrucoesLabel {
-    font-size: var(--font-size-btn-principal);
+    font-size: var(--font-size-subtitulo);
     font-weight: bold;
 }
 
@@ -415,12 +457,12 @@ svg {
     top: calc(50% - 1080px / 2);
     margin: auto;
     color: var(--cor-principal-font);
-    font-family: 'Gothic A1', sans-serif;
 }
 
 /**********************************************************************/
 /***************************** vire o celular *************************/
 /**********************************************************************/
+
 .p-paisagem {
     color: var(--p-paisagem-text-color);
     text-align: center;
