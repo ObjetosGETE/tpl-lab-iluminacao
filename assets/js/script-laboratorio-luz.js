@@ -1,3 +1,36 @@
+$(document).ready(function () {
+
+    resizeBodyBodyLaboratorio()
+    $(window).resize(function () {
+        resizeBodyBodyLaboratorio()
+    });
+
+    $('#comecar').click(function () {
+        $('#inicial').addClass('d-none');
+        $('#conteudo').removeClass('d-none');
+    });
+
+    $('#onoff11').click(function () {
+        ambienteTrabalho();
+    });
+
+    $('#onoff12').click(function () {
+        ambienteLeitura();
+    });
+    $('#onoff13').click(function () {
+        ambienteCinema();
+    });
+    $('#onoff14').click(function () {
+        ambienteDescanso();
+    });
+
+    abreMenu();
+    alternarLuzIndividual();
+    somFechar();
+    somClique();
+    efeitoSelecao();
+});
+
 function escalaProporcao(largura, altura) {
 
     var larguraScreen = $(window).width();
@@ -57,7 +90,6 @@ function somFechar() {
 }
 
 function abreMenu() {
-
     $('.menu-toggle').click(function () {
         $(this).toggleClass('open');
         $('.menu-body').toggleClass('open');
@@ -133,7 +165,6 @@ function alternarLuzIndividual() {
     }
 }
 
-
 function ambienteTrabalho() {
     $('.toggle').prop('checked', false);
 
@@ -144,6 +175,7 @@ function ambienteTrabalho() {
     $('#title-ambiente').text('Iluminação trabalho');
 
     $('#modalAmbiente').modal('hide');
+
 }
 
 function ambienteLeitura() {
@@ -182,34 +214,18 @@ function ambienteDescanso() {
     $('#modalAmbiente').modal('hide');
 }
 
+function efeitoSelecao() {
+    $(".botao-selecionavel").on("click", function () {
+        $(".botao-selecionavel").removeClass("selecionado");
 
-$(document).ready(function () {
-
-    resizeBodyBodyLaboratorio()
-    $(window).resize(function () {
-        resizeBodyBodyLaboratorio()
-    });
-
-    $('#comecar').click(function () {
-        $('#inicial').addClass('d-none');
-        $('#conteudo').removeClass('d-none');
+        $(this).addClass("selecionado");
     });
 
-    $('#onoff11').click(function () {
-        ambienteTrabalho();
-    });
-    $('#onoff12').click(function () {
-        ambienteLeitura();
-    });
-    $('#onoff13').click(function () {
-        ambienteCinema();
-    });
-    $('#onoff14').click(function () {
-        ambienteDescanso();
-    });
 
-    abreMenu();
-    alternarLuzIndividual();
-    somFechar();
-    somClique();
-});
+    $("[id^='onoff']").on("click", function () {
+
+        if (!$(this).hasClass("botao-selecionavel")) {
+            $(".botao-selecionavel").removeClass("selecionado");
+        }
+    });
+}

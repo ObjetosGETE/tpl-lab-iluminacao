@@ -299,6 +299,12 @@ svg {
     color: var(--cor-terciaria-font);
 }
 
+.selecionado {
+    background-color: var(--cor-principal-bg) !important;
+    border-color: var(--cor-secundaria-borda) !important;
+    color: var(--cor-terciaria-font);
+}
+
 .title-todas {
     color: var(--cor-principal-font);
     text-transform: uppercase;
