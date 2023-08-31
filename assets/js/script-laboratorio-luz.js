@@ -170,7 +170,7 @@ function ambienteTrabalho() {
 
     $('#onoff2, #onoff4, #onoff8, #onoff9, #onoff10').prop('checked', true);
 
-    $('.bg').attr('src', 'assets/img/12-trabalho.png');
+    $('.bg').attr('src', 'assets/img/12-Trabalho.png');
 
     $('#title-ambiente').text('Iluminação trabalho');
 
