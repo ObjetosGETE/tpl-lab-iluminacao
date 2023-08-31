@@ -17,9 +17,11 @@ $(document).ready(function () {
     $('#onoff12').click(function () {
         ambienteLeitura();
     });
+
     $('#onoff13').click(function () {
         ambienteCinema();
     });
+
     $('#onoff14').click(function () {
         ambienteDescanso();
     });
