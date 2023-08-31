@@ -29,13 +29,13 @@ body {
     --p-paisagem-text-color: white;
     --modo-smart-bg-color: #F5866C;
 
-    --font-size-title-principal: 74px;
-    --font-size-title-secundario: 29px;
-    --font-size-titulo: 45px;
-    --font-size-subtitulo: 35px;
-    --font-size-btn-principal: 33px;
-    --font-size-paragrafo: 33px;
-    --font-size-legenda: 25px;
+    --font-size-title-principal: 60px;
+    --font-size-title-secundario: 40px;
+    --font-size-titulo: 30px;
+    --font-size-subtitulo: 25px;
+    --font-size-btn-principal: 16px;
+    --font-size-paragrafo: 16px;
+    --font-size-legenda: 18px;
 
 }
 
@@ -44,8 +44,9 @@ body {
 /*********************************************************************/
 
 .title-inicial {
-    top: 71px;
+    top: 122px;
     color: var(--cor-terciaria-font);
+    left: 527px;
 }
 
 .principal {
@@ -60,25 +61,34 @@ body {
     text-transform: uppercase;
 }
 
+.body-introducao {
+    font-size: var(--font-size-paragrafo);
+    padding: 5%;
+    color: #707070;
+}
+
 .div-comecar {
-    width: 772px;
-    height: 559px;
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
     top: 218px;
     background-color: var(--cor-principal-bg);
-    font-size: var(--font-size-paragrafo);
-    padding: 30px;
+    padding: 3%;
     margin-top: 40px;
     border: 15px solid var(--cor-primaria-borda);
     opacity: 0.9;
     color: var(--cor-quaternaria-font);
 }
 
+.p-inicial {
+    font-size: 35px;
+}
+
 #comecar {
-    width: 596px;
+    width: 90%;
     background-color: var(--cor-secundaria-bg) !important;
-    height: 100px;
-    font-size: var(--font-size-btn-principal);
+    height: 25%;
+    font-size: 35px;
     margin-top: 56px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
@@ -308,8 +318,8 @@ svg {
 .title-todas {
     color: var(--cor-principal-font);
     text-transform: uppercase;
-    font-size: 25px !important;
-    padding-top: 20px;
+    font-size: 20px !important;
+    padding-top: 5%;
 }
 
 .fundo-btn-modal {
@@ -328,8 +338,8 @@ svg {
 .onoff-modal input.toggle+label {
     display: inline-block;
     position: relative;
-    height: 100px;
-    width: 32px;
+    height: 8vw;
+    width: 2vw;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -337,21 +347,21 @@ svg {
 .onoff-modal input.toggle+label::before {
     content: "";
     display: block;
-    height: 50px;
+    height: 2vw;
     border-radius: 30px;
     transition: 0.1s ease-in-out;
     background-color: var(--cor-secundaria-bg);
     box-shadow: var(--sombra);
-    width: 175px;
+    width: 8vw;
 }
 
 .onoff-modal input.toggle+label:after {
     content: "";
     position: absolute;
-    height: 48px;
-    width: 48px;
-    top: 0px;
-    left: 0px;
+    height: 2vw;
+    width: 2vw;
+    top: 0;
+    left: 0;
     border-radius: 30px;
     background: var(--toggle-button-bg-color);
     transition: 0.1s ease-in-out;
@@ -359,13 +369,37 @@ svg {
 }
 
 .onoff-modal input.toggle:checked+label::before {
-    width: 175px;
+    width: 8vw;
     background: var(--toggle-button-bg-color-checked);
 }
 
 .onoff-modal input.toggle:checked+label::after {
-    left: 135px;
-    box-shadow: var(--sombra-texto);
+    left: calc(8vw - 2vw);
+}
+
+@media (max-width: 768px) {
+    .onoff-modal input.toggle+label {
+        height: 13vw;
+        width: 4vw;
+    }
+
+    .onoff-modal input.toggle+label::before {
+        height: 5vw;
+        width: 27vw;
+    }
+
+    .onoff-modal input.toggle+label:after {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .onoff-modal input.toggle:checked+label::before {
+        width: 27vw;
+    }
+
+    .onoff-modal input.toggle:checked+label::after {
+        left: calc(28vw - 6vw);
+    }
 }
 
 #instrucao {
@@ -377,8 +411,8 @@ svg {
 }
 
 .ajuste {
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 5%;
+    margin-left: 27%;
 }
 
 #instrucao:hover {
@@ -430,16 +464,15 @@ svg {
 
 .body-introducao {
     font-size: var(--font-size-paragrafo);
-    padding: 60px;
+    padding: 5%;
     color: #707070;
 }
 
 .btn-explorar {
-    width: 696px;
+    width: 90%;
     background-color: var(--cor-secundaria-bg);
-    height: 105px;
+    height: 60px;
     font-size: var(--font-size-btn-principal);
-    padding: 29px;
     margin-top: 56px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
