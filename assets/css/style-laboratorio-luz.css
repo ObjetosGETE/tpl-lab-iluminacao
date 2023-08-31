@@ -87,8 +87,8 @@ body {
 #comecar {
     width: 90%;
     background-color: var(--cor-secundaria-bg) !important;
-    height: 19%;
-    font-size: 35px;
+    height: 18%;
+    font-size: 33px;
     margin-top: 56px;
     color: var(--cor-secundaria-font);
     text-transform: uppercase;
