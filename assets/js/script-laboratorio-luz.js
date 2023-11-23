@@ -102,18 +102,18 @@ function abreMenu() {
 function alternarLuzIndividual() {
     $('.toggle').change(function () {
         var backgrounds = {
-            'onoff1': 'assets/img/02-Bulbo.png',
-            'onoff2': 'assets/img/03-Didroicas.png',
-            'onoff3': 'assets/img/04-Mini-dicroicas.png',
-            'onoff4': 'assets/img/05-PAR.png',
-            'onoff5': 'assets/img/06-Arandela.png',
-            'onoff6': 'assets/img/07-AR.png',
-            'onoff7': 'assets/img/08-Balizadores.png',
-            'onoff8': 'assets/img/09-Perfil-led.png',
-            'onoff9': 'assets/img/10-Tubular.png',
-            'onoff10': 'assets/img/11-Halopin.png',
-            'onoff15': 'assets/img/16-Todas-acesas.png',
-            'onoff16': 'assets/img/01-Luzes-apagadas.png'
+            'onoff1': 'assets/img/02-Bulbo.jpg',
+            'onoff2': 'assets/img/03-Didroicas.jpg',
+            'onoff3': 'assets/img/04-Mini-dicroicas.jpg',
+            'onoff4': 'assets/img/05-PAR.jpg',
+            'onoff5': 'assets/img/06-Arandela.jpg',
+            'onoff6': 'assets/img/07-AR.jpg',
+            'onoff7': 'assets/img/08-Balizadores.jpg',
+            'onoff8': 'assets/img/09-Perfil-led.jpg',
+            'onoff9': 'assets/img/10-Tubular.jpg',
+            'onoff10': 'assets/img/11-Halopin.jpg',
+            'onoff15': 'assets/img/16-Todas-acesas.jpg',
+            'onoff16': 'assets/img/01-Luzes-apagadas.jpg'
         };
 
         var background = $('.bg');
@@ -155,7 +155,7 @@ function alternarLuzIndividual() {
                 $('#modalAmbiente').modal('hide');
             }
         } else {
-            background.attr('src', 'assets/img/01-Luzes-apagadas.png');
+            background.attr('src', 'assets/img/01-Luzes-apagadas.jpg');
             playToggleSound();
             $('#title-ambiente').text('Todas as luzes apagadas');
             $('#onoff1, #onoff2, #onoff3, #onoff4, #onoff5, #onoff6, #onoff7, #onoff8, #onoff9, #onoff10').prop('checked', false);
@@ -172,7 +172,7 @@ function ambienteTrabalho() {
 
     $('#onoff2, #onoff4, #onoff8, #onoff9, #onoff10').prop('checked', true);
 
-    $('.bg').attr('src', 'assets/img/12-Trabalho.png');
+    $('.bg').attr('src', 'assets/img/12-Trabalho.jpg');
 
     $('#title-ambiente').text('Iluminação trabalho');
 
@@ -185,7 +185,7 @@ function ambienteLeitura() {
 
     $('#onoff1, #onoff5, #onoff6, #onoff8').prop('checked', true);
 
-    $('.bg').attr('src', 'assets/img/13-Leitura.png');
+    $('.bg').attr('src', 'assets/img/13-Leitura.jpg');
 
     $('#title-ambiente').text('Iluminação leitura');
 
@@ -197,7 +197,7 @@ function ambienteCinema() {
 
     $('#onoff2, #onoff5, #onoff7').prop('checked', true);
 
-    $('.bg').attr('src', 'assets/img/14-Cinema.png');
+    $('.bg').attr('src', 'assets/img/14-Cinema.jpg');
 
     $('#title-ambiente').text('Iluminação cinema');
 
@@ -209,7 +209,7 @@ function ambienteDescanso() {
 
     $('#onoff2, #onoff3, #onoff6').prop('checked', true);
 
-    $('.bg').attr('src', 'assets/img/15-Descanso.png');
+    $('.bg').attr('src', 'assets/img/15-Descanso.jpg');
 
     $('#title-ambiente').text('Iluminação descanso');
 
